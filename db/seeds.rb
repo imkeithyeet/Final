@@ -20,11 +20,13 @@ u8 = User.create(first_name:"Leana",last_name:"Deeb", email: 'gymshark@gmail.com
 
 
 puts "Seeding matches..."
-m1 = Match.create(user_1_id: 1, user_2_id: 2, boolean: true)
-m2 = Match.create(user_1_id: 1, user_2_id: 2, boolean: false)
-m3 = Match.create(user_1_id: 1, user_2_id: 2, boolean: true)
-m4 = Match.create(user_1_id: 1, user_2_id: 2, boolean: true)
-m5 = Match.create(user_1_id: 1, user_2_id: 2, boolean: false)
+m1 = Match.create(user_1_id: u1.id, user_2_id: u2.id, is_match: true)
+m2 = Match.create(user_1_id: u4.id, user_2_id: u6.id, is_match: false)
+m3 = Match.create(user_1_id: u5.id, user_2_id: u7.id, is_match: true)
+m4 = Match.create(user_1_id: u6, user_2_id: u8.id, is_match: true)
+m5 = Match.create(user_1_id: u1.id, user_2_id: u7.id, is_match: false)
+m5 = Match.create(user_1_id: u3.id, user_2_id: u4.id, is_match: true)
+
 
 
 
@@ -44,10 +46,10 @@ p8 = Photo.create(image_url: 'https://cdn.shopify.com/s/files/1/0560/4189/8081/f
 
 
 puts "Seeding messages..."
-ms1 = Message.create(body: "",  sender_id: sender, recipient_id: recipient)
-ms2 = Message.create(body: "",  sender_id: sender, recipient_id: recipient)
-ms3 = Message.create(body: "",  sender_id: sender, recipient_id: recipient)
-ms4 = Message.create(body: "",  sender_id: sender, recipient_id: recipient)
+ms1 = Message.create(body: "",  sender_id: u2.id, recipient_id: u1.id)
+ms2 = Message.create(body: "",  sender_id: u5.id, recipient_id: u7.id)
+ms3 = Message.create(body: "",  sender_id: u6.id, recipient_id: u8.id)
+ms4 = Message.create(body: "",  sender_id: u3.id, recipient_id: u4.id)
 
 
 
