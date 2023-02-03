@@ -4,7 +4,7 @@ import {MdFingerprint} from 'react-icons/md'
 import { FaBars, FaTimes} from 'react-icons/fa'
 import { Button } from './Button';
 import '../styles/Navbar.css'
-import { IconContext} from'react-icons/lib'
+import { IconContext } from'react-icons/lib'
 
 function Navbar() {
 
@@ -32,7 +32,7 @@ function Navbar() {
                 <div className=".navbar-container.container ">
                     <Link  to ='/' className="navbar-logo" onClick={closeMobileMenu}>
                         <MdFingerprint className="navbar-icon" /> 
-                        LAVISH
+                        Us Dating
                     </Link> 
                     <div className="menu-icon " onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}

@@ -1,13 +1,14 @@
 .navbar {
     background: #1c2237;
     height: 150px;
-    display: flex;
-    justify-content: center;
+    display: absolute;
+    justify-content: right;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    right:200px;
+
   }
   
   .navbar-container {
@@ -27,13 +28,16 @@
   }
   
   .navbar-logo {
-    color: #fff;
+    color: rgb(255, 255, 255);
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
     display: flex;
-    align-items: center;
+    align-items: left;
+    position: relative;
+    top: 55px;
+    left: 40px;
   }
   
   .navbar-icon {
@@ -47,6 +51,8 @@
     list-style: none;
     text-align: center;
     justify-content: end;
+    right: 400px;
+    
   }
   
   .nav-item {
