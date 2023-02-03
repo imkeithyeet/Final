@@ -1,7 +1,14 @@
 class User < ApplicationRecord
+    has_secure_password
     has_many :photos, dependent: :destroy
     has_many :liked_matches, class_name: "Match", foreign_key: :user_1
     has_many :liked_by_matches, class_name: "Match", foreign_key: :user_2
+
+    validates :first_name, presence: true, length: {in: 4..25}
+    validates :last_name, presence: true, length: {in: 4..25}
+
+    validates :email,presence: true, uniqueness: true, format:{with: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i}
+    validates :password, length: {in: 6..25}
 
 end
 

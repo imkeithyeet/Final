@@ -10,7 +10,7 @@ Message.destroy_all
 puts "Seeding users..."
 u1 = User.create(first_name:"Beverly",last_name:"Zhu", email: 'Bzhu@gmail.com', password: "skating123", gender: "Female", age:"20",occupation: "Figure Skater", location: "Los Angeles California", bio: "I love figure skating and spending time with friends that pushes me to do more in life.", horoscope: "Gemini")
 u2 = User.create(first_name:"Keith",last_name:"Ma", email: 'yeser@gmail.com', password: "yam123", gender: "Male", age:"26", occupation: "Student",location: "Los Angeles California", bio: "A down to earth guy that doesn't give into other peoples thoughts.", horoscope: "Gemini")
-u3 = User.create(first_name:"Rich",last_name:"Brian", email: 'Rich@gmail.com', password: "Datstick", gender: "Male", age:"23", occupation: "Rapper",location: "Jakarta Indonesia", bio: "I am rapper that has started from youtube and now became an internet sensation that many love.", horoscope: "Virgo")
+u3 = User.create(first_name:"Rich",last_name:"Brian", email: 'Rich@gmail.com', password: "Datstick", gender: "  Male", age:"23", occupation: "Rapper",location: "Jakarta Indonesia", bio: "I am rapper that has started from youtube and now became an internet sensation that many love.", horoscope: "Virgo")
 u4 = User.create(first_name:"Belle",last_name:"Delphine", email: 'bathwater@gmail.com', password: "youtube69", gender: "Female", age:"26", occupation: "Streamer",location: "United Kingdom", bio: "International streamer on youtube and onlyfans enthusiasts.", horoscope: "Leo")
 u5 = User.create(first_name:"Sam",last_name:"Smith", email: 'sam123@gmail.com', password: "sam123", gender: "Them", age:"30",occupation: "Singer", location: "London", bio: "Sup everyone i love to sing for my fans and make music that expresses who i am as a person.", horoscope: "Taurus")
 u6 = User.create(first_name:"Bryan",last_name:"Kim", email: 'yessir@gmail.com', password: "bet420", gender: "Male", age:"26", occupation: "Engineer",location: "Los Angeles California", bio: "Big partygoer that loves to go out and have some fun.", horoscope: "Libra")
@@ -20,11 +20,11 @@ u8 = User.create(first_name:"Leana",last_name:"Deeb", email: 'gymshark@gmail.com
 
 
 puts "Seeding matches..."
-m1 = Match.create(user_1_id: 1, user_2_id: 1, boolean: true)
-m2 = Match.create(user_1_id: 1, user_2_id: 1, boolean: false)
-m3 = Match.create(user_1_id: 1, user_2_id: 1,, boolean: true)
-m4 = Match.create(user_1_id: 1, user_2_id: 1, boolean: true)
-m5 = Match.create(user_1_id: 1, user_2_id: 1, boolean: false)
+m1 = Match.create(user_1_id: 1, user_2_id: 2, boolean: true)
+m2 = Match.create(user_1_id: 1, user_2_id: 2, boolean: false)
+m3 = Match.create(user_1_id: 1, user_2_id: 2, boolean: true)
+m4 = Match.create(user_1_id: 1, user_2_id: 2, boolean: true)
+m5 = Match.create(user_1_id: 1, user_2_id: 2, boolean: false)
 
 
 
