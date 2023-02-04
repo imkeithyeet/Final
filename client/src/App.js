@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/pages/Footer/Footer.js';
 import Contact from './components/pages/Contact';
+import LoginForm from './components/LoginForm';
 
 
 function App() {
@@ -13,8 +14,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' exact component={Home} />
-        <Route path='/Contact'  component={Contact} />
+        <Route path='/' exact element={<Home />} />
+        <Route path='/Contact' element={<Contact />} />
+        <Route path='/sign-up' element={<LoginForm />} />
+
       </Routes>
       <Footer />
     </Router>

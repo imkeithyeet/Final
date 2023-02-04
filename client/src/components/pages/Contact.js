@@ -22,6 +22,7 @@ const Contact = () => {
   }
 
   return (
+    <div>
     <form
       action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
@@ -48,6 +49,7 @@ const Contact = () => {
       </div>
       <p3 className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p3>
     </form>
+    </div>
   );
 };
 
