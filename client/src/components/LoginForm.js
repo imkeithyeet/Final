@@ -1,11 +1,34 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-export default function LoginForm() {
-    
+export default function LoginForm({onLogin}) {
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+      function handleSubmit(e) {
+    e.preventDefault();
+    setIsLoading(true);
+    fetch("/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ firstName,email, password }),
+    }).then((r) => {
+      setIsLoading(false);
+      if (r.ok) {
+        r.json().then((user) => onLogin(user));
+      } else {
+        r.json().then((err) => setErrors(err.errors));
+      }
+    });
+  }
     
     return (
       <>
-       
+        <form onSubmit={handleSubmit}>
         <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-md space-y-8">
             <div>
@@ -33,6 +56,8 @@ export default function LoginForm() {
                     required
                     className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                     placeholder="First Name"
+                    onChange={(e) => setFirstName(e.target.value)}
+
                   />
                 </div>
                 {/* <div>
@@ -61,6 +86,7 @@ export default function LoginForm() {
                     required
                     className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                     placeholder="Email"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div>
@@ -75,6 +101,7 @@ export default function LoginForm() {
                     required
                     className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                     placeholder="Password"
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
               </div>
@@ -106,12 +133,19 @@ export default function LoginForm() {
                 >
                   <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                   </span>
-                  Sign in
+                  Sign In
                 </button>
               </div>
-            </form>
+              {/* <input>
+        <Button variant="outline" type="submit">
+          {isLoading ? "Signing In..." : "Sign In"}
+        </Button>
+      </input> */}
+        </form>
+
           </div>
         </div>
+        </form>
       </>
     )
   }
