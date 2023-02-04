@@ -1,0 +1,21 @@
+
+  .button {
+    padding: 12px 64px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    color: rgb(0, 0, 0);
+    background-color: rgb(134, 211, 239);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    left: 18.4%;
+    bottom: 240px;
+  }
+.button:hover {
+    color: #fff;
+    background-color: #135156;
+    transition: all 0.2s ease-out;
+  }
+
+ 

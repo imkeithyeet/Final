@@ -7,7 +7,6 @@ import {
   FaInstagram,
   FaYoutube,
   FaTwitter,
-  FaLinkedin
 } from 'react-icons/fa';
 import { MdFingerprint } from 'react-icons/md';
 
@@ -67,7 +66,7 @@ function Footer() {
           <div className='social-icons'>
             <Link
               className='social-icon-link'
-              to='/'
+              to={'https://www.facebook.com/'}
               target='_blank'
               aria-label='Facebook'
             >
@@ -75,7 +74,7 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to='/'
+              to={'https://www.instagram.com/'}
               target='_blank'
               aria-label='Instagram'
             >
@@ -84,7 +83,7 @@ function Footer() {
             <Link
               className='social-icon-link'
               to={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
+                'https://www.youtube.com/'
               }
               target='_blank'
               aria-label='Youtube'
@@ -93,7 +92,7 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link'
-              to='/'
+              to={'https://twitter.com/'}
               target='_blank'
               aria-label='Twitter'
             >

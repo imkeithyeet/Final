@@ -48,11 +48,12 @@
     transition: all 0.3s ease-out;
   }
   
-  .btn--wide {
+  /* .btn--wide {
     padding: 12px 64px;
     font-size: 20px;
   }
-  
+   */
+
   .btn--large:hover,
   .btn--medium:hover,
   .btn--mobile:hover {
@@ -63,7 +64,7 @@
   
   .btn--wide:hover {
     color: #fff;
-    background-color: #f00946;
+    background-color: #278087;
     transition: all 0.2s ease-out;
   }
   
@@ -77,17 +78,8 @@
     width: 100%;
   }
   
-  .blue {
-    background-color: #276afb;
-    color: #fff;
-    border: none;
-  }
-  
-  .red {
-    background-color: #f00946;
-    color: #fff;
-    border: none;
-  }
+
+ 
   
   .primary {
     background-color: #242424;
@@ -119,4 +111,7 @@
     height: 100%;
     width: 100%;
 
+  }
+  .top-line{
+    color: rgb(255, 16, 131);
   }
