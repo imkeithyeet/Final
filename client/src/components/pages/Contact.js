@@ -15,7 +15,7 @@ const Contact = () => {
   if (submitted) {
     return (
       <>
-       <p1 className="check">✅</p1>
+       <p1 className="text-center">✅</p1>
         <h2 className="thank">Thank you!</h2>
         <div className="soon">We'll be in touch soon.</div>
       </>
@@ -34,7 +34,7 @@ const Contact = () => {
         <h1 className="H3">Contact Us</h1>
         </div>
         <div>
-        <p1>Send Us a Message Today:</p1>
+        <p1 class="text-left">Send Us a Message Today:</p1>
         </div>
       <div className="name">
         <input type="text" placeholder="Your name" name="name" required />
