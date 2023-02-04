@@ -56,7 +56,7 @@ function Navbar() {
                             <li className="nav-btn">
                                 {button ? (
                                     <Link 
-                                    to='/LoginForm'
+                                    to='/login'
                                      className="btn-link"
                                      >
                                         <Button buttonStyle="btn--outline">LOGIN</

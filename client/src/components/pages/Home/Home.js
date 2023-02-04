@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <HeroSection {...homeObjOne} />
-      <Link to="/LoginForm">
+      <Link to="/login">
      <button className="button" type="button">
           Sign In or Register Today!
      </button>
