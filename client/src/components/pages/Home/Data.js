@@ -6,7 +6,8 @@ export const homeObjOne = {
     headline: 'Unlimited swipes,star likes and super matches',
     description:
       'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
-   
+      img: 'https://images.pexels.com/photos/6585024/pexels-photo-6585024.jpeg?auto=compress&cs=tinysrgb&w=1600',
+
   };
   
   export const homeObjTwo = {
@@ -17,7 +18,7 @@ export const homeObjOne = {
     headline: 'Stay protected 24/7 anywhere anytime',
     description:
       'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
-  
+     
   
   };
   
