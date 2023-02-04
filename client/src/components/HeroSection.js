@@ -48,8 +48,7 @@ function HeroSection({
                     {buttonLabel}
                   </Button>
                 </Link> */}
-                
-                
+                   
               </div>
             </div>
             <div className='col'>

@@ -6,7 +6,21 @@
   .home__hero-row {
     align-items: center;
   }
-  
+  .home__hero-subtitle.dark{
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+    position: relative;
+    left: 300px;
+  }
+  .heading.dark{
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+    position: relative;
+    left: 300px;
+    top: 50px;
+  }
   .row {
     display: flex;
     margin-right: -15px;
@@ -29,6 +43,8 @@
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    position: relative;
+    
   }
   
   .top-line {
@@ -75,6 +91,7 @@
     margin-left: 10px;
     padding-right: 0;
     border-radius: 15px;
+    position: relative;
   }
   
   img {
@@ -101,3 +118,11 @@
       flex-basis: 100%;
     }
   }
+  /* .heading.dark{
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+    position: relative;
+    right: 100px;
+  } */
+  

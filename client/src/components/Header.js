@@ -26,9 +26,6 @@ const Header = () => {
 
                 <ul className='hidden md:flex gap-8 p-6 uppercase bg-white/10'>
                     <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/'>Testimonials</Link></li>
-                    <li><Link to='/'>Information</Link></li>
-                    <li><Link to='/'>Jobs</Link></li>
                     <li><Link to='/'>About</Link></li>
                     <li><Link to='/'>Contact</Link></li>
                 </ul>

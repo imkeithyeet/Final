@@ -11,12 +11,14 @@ function Home() {
   return (
     <>
       <HeroSection {...homeObjOne} />
-      <Link to="/Sign-up">
+      <Link to="/LoginForm">
      <button className="button" type="button">
           Sign In or Register Today!
      </button>
- </Link>
+    </Link>
       <HeroSection {...homeObjThree} />
+      <img className="dating" src={'https://i.kym-cdn.com/entries/icons/original/000/017/323/OnlineDating1.jpg'} alt="Two" />
+
       <HeroSection {...homeObjTwo} />
       
     </>
