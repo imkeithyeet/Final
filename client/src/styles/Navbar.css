@@ -28,7 +28,6 @@
   }
   
   .navbar-logo {
-    color: rgb(255, 255, 255);
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
@@ -36,8 +35,8 @@
     display: flex;
     align-items: left;
     position: relative;
-    top: 55px;
-    left: 40px;
+    top: -100px;
+    left: 8px;
   }
   
   .navbar-icon {
@@ -46,12 +45,15 @@
   
   .nav-menu {
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
     list-style: none;
     text-align: center;
     justify-content: end;
-    right: 400px;
+    right: 20px;
+    top: 40px;
+    
     
   }
   
