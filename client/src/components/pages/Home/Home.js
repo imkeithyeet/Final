@@ -7,7 +7,7 @@ import './Home.css';
 
 
 function Home() {
-  
+ 
   return (
     <>
       <HeroSection {...homeObjOne} />

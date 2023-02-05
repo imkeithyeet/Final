@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React,{useState} from "react";
 import  "../../styles/Contact.css";
 
 
@@ -11,7 +11,7 @@ const Contact = () => {
       setSubmitted(true);
     }, 100);
   };
-
+  
   if (submitted) {
     return (
       <>
