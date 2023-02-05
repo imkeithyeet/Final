@@ -11,15 +11,17 @@
     padding-top: 0;
     padding-bottom: 60px;
     position: relative;
-    left: 300px;
+    left: 190px;
+    display: flex;
   }
   .heading.dark{
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
     position: relative;
-    left: 300px;
+    left: 188px;
     top: 50px;
+    display: flex;
   }
   .row {
     display: flex;

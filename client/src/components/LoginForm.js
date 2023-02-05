@@ -102,11 +102,19 @@ export default function LoginForm({onLogin, props}) {
             </span>
           </div>
           <div className="form-group mt-3">
-            <label>Full Name</label>
+            <label>First Name</label>
             <input
-              type="email"
+              type="first name"
               className="form-control mt-1"
-              placeholder="e.g Jane Doe"
+              placeholder="e.g Jane"
+            />
+          </div>
+          <div className="form-group mt-3">
+            <label>Last Name</label>
+            <input
+              type="last name"
+              className="form-control mt-1"
+              placeholder="e.g Doe"
             />
           </div>
           <div className="form-group mt-3">
@@ -119,6 +127,14 @@ export default function LoginForm({onLogin, props}) {
           </div>
           <div className="form-group mt-3">
             <label>Password</label>
+            <input
+              type="password"
+              className="form-control mt-1"
+              placeholder="Password"
+            />
+          </div>
+          <div className="form-group mt-3">
+            <label>Password Confirmation</label>
             <input
               type="password"
               className="form-control mt-1"

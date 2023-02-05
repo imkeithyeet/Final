@@ -59,7 +59,7 @@ function Navbar() {
                                     to='/login'
                                      className="btn-link"
                                      >
-                                        <Button buttonStyle="btn--outline">LOGIN</
+                                        <Button buttonStyle="btn--outline">LOGIN/SIGN UP</
                                         Button>
                                     </Link>
                                 ): (

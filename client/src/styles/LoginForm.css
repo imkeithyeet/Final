@@ -65,3 +65,7 @@
     display: flex;
    justify-content: center;
   }
+  .link-primary{
+    color: blue;
+    cursor: pointer; 
+  }
