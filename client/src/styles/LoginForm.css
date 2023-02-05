@@ -1,34 +1,39 @@
-.signIn{
-    position: relative;
+
+
+  
+  .Auth-form-container {
     display: flex;
-    margin-left:auto;
-    margin-right:auto;
-    font-size: 45px;
-    top:100px;
     justify-content: center;
-}
-.column{
-position: relative;
-top: 190px;
-right: -400px;
-margin-left:auto;
-margin-right:auto;
-
-
-}
-.Remember{
-    position: relative;
-    display: flex;
-    top:160px;
-    right: -500px; 
-    margin-left:auto;
-    margin-right:auto;
-}
-.check{
-    position: sticky;
-    display: flex;
-    top:194px;
-    right: 480px; 
-    margin-left:auto;
-    margin-right:auto;
-}
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .Auth-form {
+    width: 550px;
+    height: 450px;
+    box-shadow: rgb(0 0 0 / 16%) 2px 2px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: rgb(196, 153, 231);
+  }
+  
+  .Auth-form-content {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  
+  .Auth-form-title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: 800;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+  }
