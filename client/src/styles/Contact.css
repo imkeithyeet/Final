@@ -29,11 +29,10 @@ button{
     border-radius: 4px;
 }
 
-p1{
-    color: rgb(61, 65, 87);
-    font-size: 20px;
+.text-left{
     position: relative;
-    top:-20px;
+    display: flex;
+    justify-content: center;
 }
 .thank {
     color: rgb(61, 65, 87);
@@ -46,4 +45,26 @@ p1{
     font-size: 50px;
     position: relative;
     top:100px;
+}
+.bars{
+    position: relative;
+    display: absolute;
+    top: 30px;
+    left: 25em;
+
+   
+}
+.bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:45px;
+   
+}
+.send{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:60px;
+
 }

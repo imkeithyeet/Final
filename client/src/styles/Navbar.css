@@ -11,11 +11,7 @@
 
   }
   
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-  }
+
   
   .container {
     z-index: 1;
@@ -63,7 +59,7 @@
   }
   
   .nav-item:hover {
-    border-bottom: 2px solid #f00946;
+    border-bottom: 2px solid #ffffff;
   }
   
   .nav-links {

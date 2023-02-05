@@ -1,0 +1,34 @@
+.signIn{
+    position: relative;
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 45px;
+    top:100px;
+    justify-content: center;
+}
+.column{
+position: relative;
+top: 190px;
+right: -400px;
+margin-left:auto;
+margin-right:auto;
+
+
+}
+.Remember{
+    position: relative;
+    display: flex;
+    top:160px;
+    right: -500px; 
+    margin-left:auto;
+    margin-right:auto;
+}
+.check{
+    position: sticky;
+    display: flex;
+    top:194px;
+    right: 480px; 
+    margin-left:auto;
+    margin-right:auto;
+}

@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import '../styles/LoginForm.css'
+
 
 export default function LoginForm({onLogin}) {
   const [firstName, setFirstName] = useState("");
@@ -37,15 +39,15 @@ export default function LoginForm({onLogin}) {
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt="Us Dating"
               /> */}
-              <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-                Sign in to your account
+              <h2 className="signIn">
+                Sign In To Your Account
               </h2>
             </div>
             <form className="mt-8 space-y-6" action="#" method="POST">
               <input type="hidden" name="remember" defaultValue="true" />
-              <div className="-space-y-px rounded-md shadow-sm">
+              <wrapper className="column">
                 <div>
-                  <label htmlFor="First name" className="sr-only">
+                  <label htmlFor="First name">
                     First Name
                   </label>
                   <input
@@ -60,20 +62,6 @@ export default function LoginForm({onLogin}) {
 
                   />
                 </div>
-                {/* <div>
-                  <label htmlFor="Last name" className="sr-only">
-                    Last Name
-                  </label>
-                  <input
-                    id="Last-name"
-                    name="Last Name"
-                    type="Last Name"
-                    autoComplete="Last Name"
-                    required
-                    className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                    placeholder="Last Name"
-                  />
-                </div> */}
                 <div>
                   <label htmlFor="Email" className="sr-only">
                     Email
@@ -104,7 +92,7 @@ export default function LoginForm({onLogin}) {
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
-              </div>
+                </wrapper>
   
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
@@ -112,9 +100,9 @@ export default function LoginForm({onLogin}) {
                     id="remember-me"
                     name="remember-me"
                     type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                    className=""
                   />
-                  <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
+                  <label htmlFor="remember-me" className="Remember">
                     Remember me
                   </label>
                 </div>
