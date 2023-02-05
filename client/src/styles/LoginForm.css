@@ -16,7 +16,7 @@
     padding-top: 30px;
     padding-bottom: 20px;
     border-radius: 8px;
-    background-color: rgb(196, 153, 231);
+    background-color: rgba(216, 198, 230, 0.697);
   }
   
   .Auth-form-content {
@@ -36,4 +36,32 @@
     font-size: 14px;
     font-weight: 600;
     color: rgb(34, 34, 34);
+   position: relative;
+   display: flex;
+   top: 2em;
+   right: 0.9em;
+  }
+  .text-center{
+    position: relative;
+    display: flex;
+    left: 6.5em;
+    bottom: 0.4em;
+    
+  }
+  .form-group.mt-3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right:1.1em;
+  }
+  .forgot{
+    position: relative;
+    display: flex;
+   left: 7.9em;
+   top: 1.7em;
+  }
+  .submit{
+    position: relative;
+    display: flex;
+   justify-content: center;
   }

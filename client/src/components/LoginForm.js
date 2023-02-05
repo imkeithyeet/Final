@@ -4,10 +4,15 @@ import '../styles/LoginForm.css'
 
 export default function LoginForm({onLogin, props}) {
   let [authMode, setAuthMode] = useState("signin")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const changeAuthMode = () => {
     setAuthMode(authMode === "signin" ? "signup" : "signin")
   }
+  
 
   if (authMode === "signin") {
     return (
@@ -18,8 +23,16 @@ export default function LoginForm({onLogin, props}) {
             <div className="text-center">
               Not registered yet?{" "}
               <span className="link-primary" onClick={changeAuthMode}>
-                Sign Up
+                   Sign Up
               </span>
+            </div>
+            <div className="form-group mt-3">
+              <label>First Name</label>
+              <input
+                type="first name"
+                className="form-control mt-1"
+                placeholder="first name"
+              />
             </div>
             <div className="form-group mt-3">
               <label>Email address</label>
@@ -37,12 +50,12 @@ export default function LoginForm({onLogin, props}) {
                 placeholder="Enter password"
               />
             </div>
-            <div className="d-grid gap-2 mt-3">
+            <div className="submit">
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>
             </div>
-            <p className="text-center mt-2">
+            <p className="forgot">
               Forgot <a href="#">password?</a>
             </p>
           </div>
