@@ -82,7 +82,7 @@ export default function LoginForm({onLogin, props}) {
         <div>
       </div>
         <p className="forgot">
-          Forgot <a href="#">password?</a>
+          Forgot <a className="p" href="#">Password?</a>
         </p>
       </div>
     </form>
@@ -92,7 +92,7 @@ export default function LoginForm({onLogin, props}) {
 
   return (
     <div className="Auth-form-container">
-      <form className="Auth-form">
+      <form className="box">
         <div className="Auth-form-content">
           <h3 className="Auth-form-title">Register Your Profile Today</h3>
           <div className="text-center">
@@ -147,7 +147,7 @@ export default function LoginForm({onLogin, props}) {
             </button>
           </div>
           <p className="forgot">
-            Forgot <a href="#">password?</a>
+            Forgot <a className="p" href="#">Password?</a>
           </p>
         </div>
       </form>

@@ -18,6 +18,15 @@
     border-radius: 8px;
     background-color: rgba(216, 198, 230, 0.697);
   }
+  .box{
+    width: 550px;
+    height: 610px;
+    box-shadow: rgb(0 0 0 / 16%) 2px 2px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: rgba(216, 198, 230, 0.697);
+  }
   
   .Auth-form-content {
     padding-left: 12%;
@@ -68,4 +77,15 @@
   .link-primary{
     color: blue;
     cursor: pointer; 
+    position: relative;
+    display: flex;
+    top: 0.07em;
+    left: 1em;
+  }
+  .p{
+    position: relative;
+    display: flex;
+   justify-content: center;
+   left: 1em;
+  
   }
