@@ -8,7 +8,6 @@ import {
   FaYoutube,
   FaTwitter,
 } from 'react-icons/fa';
-import { MdFingerprint } from 'react-icons/md';
 
 function Footer() {
   return (
@@ -58,8 +57,8 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              <MdFingerprint className='navbar-icon' />
-              Us Dating
+            <img src="../images/Logo.png" alt="logo" width={190} height={210}/>
+
             </Link>
           </div>
           <small className='website-rights'>Us Dating © 2023</small>

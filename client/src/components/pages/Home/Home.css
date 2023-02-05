@@ -8,9 +8,10 @@
     font-size: 22px;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    position: absolute;
-    left: 18.4%;
-    bottom: 240px;
+    position: relative;
+    display: flex;
+    left: 17.1%;
+    bottom: 290px;
   }
 
 .button:hover {
