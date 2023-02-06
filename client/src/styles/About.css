@@ -1,50 +1,58 @@
-.H5{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    font-size: 90px;
-    top: 390px;
-    left: 330px;
-    color: rgb(0, 0, 0);
 
+
+.Img{
+    overflow:auto;
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    border-radius: 10px;
+    bottom: -3em;
+    right:28em;
+
+}
+.h{
+    overflow-x:auto;
+    position: relative;
+    display: inline-block;
+    top: 170px;
+    right: 10em;
+    font-size:55px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+
+}
+.h1{
+    overflow-x:auto;
+    position: relative;
+    display: absolute;
+    top: 340px;
+    right: 9em;
+    font-size:55px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
 }
 .p1{
+    overflow-x:auto;
     position: relative;
-    display: block;
-    font-size: 35px;
-    top: -350px;
-    left: 940px;
+    display: inline-block;
+    font-size:37px;
     color: rgb(0, 0, 0);
-    white-space: nowrap;
-    width: auto;
-    height: auto;
+    font-weight: regular;
+    font-family: "Times New Roman", Times, serif;
+    left: 25.6em;
+    bottom: 10em;
 
 }
-.p2{
+.H5{
+    overflow:auto;
     position: relative;
-    display: block;
-    font-size: 35px;
-    top: -350px;
-    left: 940px;
-    color: rgb(0, 0, 0);
-    white-space: nowrap;
-    width: auto;
-    height: auto;
-}
-.P{
+    display: inline-block;
     position: relative;
-    font-size: 30px;
-    top: 200px;
-    padding:10px;
-}
-.Img{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    border-radius: 10px;
-    position: relative;
-    bottom: -90px;
-    left: -30em;
+    font-size:65px;
+    top: -0.1em;
+    right: -14.6em;
+    font-family: "Times New Roman", Times, serif;
 
 }
