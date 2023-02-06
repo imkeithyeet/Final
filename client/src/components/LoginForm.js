@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import '../styles/LoginForm.css'
 
 
-export default function LoginForm({onLogin, showLogin, setShowLogin}) {
+export default function LoginForm({ showLogin, setShowLogin}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
@@ -27,7 +27,7 @@ export default function LoginForm({onLogin, showLogin, setShowLogin}) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => onLogin(user));
+        r.json().then((user) => (user));
       } else {
         r.json().then((err) => setErrors(err.errors));
       }

@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 
-function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
+function SignUpForm  ({ showLogin, setShowLogin}) {
     // let [authMode, setAuthMode] = useState("signing")
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -24,8 +24,8 @@ function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            firstName,
-            lastName,
+            first_name: firstName,
+            last_name: lastName,
             email,
             password,
             password_confirmation: passwordConfirmation,
@@ -33,7 +33,7 @@ function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
         }).then((r) => {
           setIsLoading(false);
           if (r.ok) {
-            r.json().then((user) => onLogin(user));
+            r.json().then((user) => user);
           } else {
             r.json().then((err) => setErrors(err.errors));
           }
@@ -41,8 +41,7 @@ function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
       }
     return (
         <div className="Auth-form-container">
-        <form className="signup" onSubmit={handleSubmit}>
-      <form className="box">
+        <form className="signup box" onSubmit={handleSubmit}>
         <div className="register">
           <h3 className="Auth-form-title">Register Your Profile Today</h3>
           <div className="text-center">
@@ -111,7 +110,6 @@ function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
           <error key={err}>{err}</error>
         ))}
       </div>
-        </form>
         </form>
     </div>
     );
