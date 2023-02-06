@@ -50,13 +50,12 @@ button{
     top:100px;
 }
 .bars{
-    overflow-x:auto;
+    overflow-y:auto;
     position: relative;
     display: inline-block;
     top: 30px;
     left: 32em;
     width: 80em;
-
    
 }
 .bar{
@@ -72,4 +71,7 @@ button{
     justify-content: center;
     top:60px;
 
+}
+form{
+    overflow-y:auto;
 }
