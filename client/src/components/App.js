@@ -8,7 +8,6 @@ import Footer from './Footer.js';
 import Contact from './pages/Contact';
 import Login from './Login';
 import About from './pages/About';
-import Dashboard from "./pages/Dashboard";
 
 
 
@@ -41,8 +40,6 @@ function App() {
   return(
     <Router>
     <Routes>
-        <Route path='/Dashboard'  element={<Dashboard />} />
-        <Dashboard user={user} setUser={setUser} />
         </Routes>
         <Footer />
         </Router>
