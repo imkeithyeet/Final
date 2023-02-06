@@ -7,13 +7,13 @@ export default function LoginForm({onLogin, props, showLogin, setShowLogin}) {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  let [authMode, setAuthMode] = useState("signing")
+  // let [authMode, setAuthMode] = useState("signing")
 
 
-  const changeAuthMode = () => {
+  // const changeAuthMode = () => {
 
-    setAuthMode(authMode === "signing" ? "signup" : "signing")
-  }
+  //   setAuthMode(authMode === "signing" ? "signup" : "signing")
+  // }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -66,16 +66,20 @@ export default function LoginForm({onLogin, props, showLogin, setShowLogin}) {
           />
         </div>
         <div className="submit">
-          <button type="submit" className="btn btn-primary">
-            Submit
+          <button  type="submit" className="btn btn-primary">
+          {isLoading ? "Loading..." : "Login"} 
           </button>
         </div>
-        <div>
-      </div>
         <p className="forgot">
           Forgot <a className="p" href="#">Password?</a>
         </p>
+        <div>
+        {errors.map((err) => (
+          <error key={err}>{err}</error>
+        ))}
       </div>
+      </div>
+      
     </form>
   </div>
 )

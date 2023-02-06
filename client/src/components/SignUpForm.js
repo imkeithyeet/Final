@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 
 function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
-    let [authMode, setAuthMode] = useState("signing")
+    // let [authMode, setAuthMode] = useState("signing")
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
@@ -10,10 +10,10 @@ function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
     const [lastName, setLastName] = useState("");
     const [firstName, setFirstName] = useState("");
 
-    const changeAuthMode = () => {
+    // const changeAuthMode = () => {
 
-        setAuthMode(authMode === "signing" ? "signup" : "signing")
-      }
+    //     setAuthMode(authMode === "signing" ? "signup" : "signing")
+    //   }
     function handleSubmit(e) {
         e.preventDefault();
         setErrors([]);
@@ -39,7 +39,6 @@ function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
           }
         });
       }
-      if (authMode === "signing") {
     return (
         <div className="Auth-form-container">
         <form className="signup" onSubmit={handleSubmit}>
@@ -100,17 +99,24 @@ function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
           </div>
           <div className="submit">
             <button type="submit" className="btn btn-primary">
-              Submit
+            {isLoading ? "Loading..." : "Submit"}
             </button>
           </div>
           <p className="forgot">
             Forgot <a className="p" href="#">Password?</a>
           </p>
         </div>
+        <div>
+        {errors.map((err) => (
+          <error key={err}>{err}</error>
+        ))}
+      </div>
         </form>
+        
+
         </form>
     </div>
     );
 }
-}
+
 export default SignUpForm;
