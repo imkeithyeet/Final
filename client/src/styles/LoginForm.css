@@ -31,6 +31,8 @@
   .Auth-form-content {
     padding-left: 12%;
     padding-right: 12%;
+    position: relative;
+    top: 2em;
   }
   
   .Auth-form-title {
