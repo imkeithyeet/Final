@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import '../styles/App.css';
 import Home from './pages/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -8,12 +8,23 @@ import Footer from './Footer.js';
 import Contact from './pages/Contact';
 import Login from './Login';
 import About from './pages/About';
+import Dashboard from "./pages/Dashboard";
+
 
 
 
 function App() {
+  const [user, setUser] = useState(null);
 
-  
+  useEffect(() => {
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+  if (!user)
   return (
     <Router>
       <Navbar  />
@@ -27,6 +38,15 @@ function App() {
     </Router>
     
   );
+  return(
+    <Router>
+    <Routes>
+        <Route path='/Dashboard'  element={<Dashboard />} />
+        <Dashboard user={user} setUser={setUser} />
+        </Routes>
+        <Footer />
+        </Router>
+  )
 }
 
 export default App;
