@@ -3,15 +3,19 @@ import '../styles/LoginForm.css'
 
 
 export default function LoginForm({onLogin, props}) {
-  let [authMode, setAuthMode] = useState("signin")
+  let [authMode, setAuthMode] = useState("signing")
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [passwordConfirmation, setPasswordConfirmation] = useState("");
+  const [lastName, setLastName] = useState("");
+
+
 
   const changeAuthMode = () => {
-    setAuthMode(authMode === "signin" ? "signup" : "signin")
+    setAuthMode(authMode === "signing" ? "signup" : "signing")
   }
   function handleSubmit(e) {
     e.preventDefault();
@@ -31,10 +35,34 @@ export default function LoginForm({onLogin, props}) {
       }
     });
   }
-
+  function handleSubmit(e) {
+    e.preventDefault();
+    setErrors([]);
+    setIsLoading(true);
+    fetch("/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        email,
+        password,
+        password_confirmation: passwordConfirmation,
+      }),
+    }).then((r) => {
+      setIsLoading(false);
+      if (r.ok) {
+        r.json().then((user) => onLogin(user));
+      } else {
+        r.json().then((err) => setErrors(err.errors));
+      }
+    });
+  }
   
 
-  if (authMode === "signin") {
+  if (authMode === "signing") {
     return (
 
       <div className="Auth-form-container">
@@ -107,6 +135,7 @@ export default function LoginForm({onLogin, props}) {
               type="first name"
               className="form-control mt-1"
               placeholder="e.g Jane"
+              onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
           <div className="form-group mt-3">
@@ -115,6 +144,7 @@ export default function LoginForm({onLogin, props}) {
               type="last name"
               className="form-control mt-1"
               placeholder="e.g Doe"
+              onChange={(e) => setLastName(e.target.value)}
             />
           </div>
           <div className="form-group mt-3">
@@ -123,6 +153,7 @@ export default function LoginForm({onLogin, props}) {
               type="email"
               className="form-control mt-1"
               placeholder="Email Address"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="form-group mt-3">
@@ -131,6 +162,7 @@ export default function LoginForm({onLogin, props}) {
               type="password"
               className="form-control mt-1"
               placeholder="Password"
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           <div className="form-group mt-3">
@@ -138,7 +170,9 @@ export default function LoginForm({onLogin, props}) {
             <input
               type="password"
               className="form-control mt-1"
-              placeholder="Password"
+              placeholder="Password Confirmation"
+              onChange={(e) => setPasswordConfirmation(e.target.value)}
+
             />
           </div>
           <div className="submit">
@@ -150,7 +184,7 @@ export default function LoginForm({onLogin, props}) {
             Forgot <a className="p" href="#">Password?</a>
           </p>
         </div>
-      </form>
+        </form>
     </div>
   )
 }

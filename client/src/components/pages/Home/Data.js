@@ -17,16 +17,16 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    headline: 'Stay protected 24/7 anywhere anytime',
+    headline: 'Us Dating is a successful platform for creating happy, passionate, and fulfilling relationships.',
     description:
-      'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
+      'Us Dating is different from other online dating websites and services. By successfully matching couples with mutual backgrounds and interests, ',
   };
   
   export const homeObjThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    headline: 'Super fast and simple onboarding process',
+    headline: 'Super fast and simple online dating process that works',
     description:
       "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
     imgStart: 'start',
