@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { useNavigate } from "react-router-dom"
 import '../styles/LoginForm.css'
 
 
@@ -7,6 +8,7 @@ export default function LoginForm({ showLogin, setShowLogin}) {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  let navigate = useNavigate()
   // let [authMode, setAuthMode] = useState("signing")
 
 
@@ -66,7 +68,9 @@ export default function LoginForm({ showLogin, setShowLogin}) {
           />
         </div>
         <div className="submit">
-          <button  type="submit" className="btn btn-primary">
+          <button onClick={()=>{
+            navigate("/Profile")
+          }}  type="submit" className="btn btn-primary">
           {isLoading ? "Loading..." : "Login"} 
           </button>
         </div>

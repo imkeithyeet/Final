@@ -8,6 +8,8 @@ import Footer from './Footer.js';
 import Contact from './pages/Contact';
 import Login from './Login';
 import About from './pages/About';
+import Profile from './pages/Profile';
+
 
 
 
@@ -40,6 +42,7 @@ function App() {
   return(
     <Router>
     <Routes>
+    <Route path='/profile'  element={()=> <Profile authorized={false}/>} />
         </Routes>
         <Footer />
         </Router>
