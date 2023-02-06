@@ -112,7 +112,7 @@ export default function LoginForm({onLogin, props}) {
   return (
     <div className="Auth-form-container">
       <form className="box">
-        <div className="Auth-form-content">
+        <div className="register">
           <h3 className="Auth-form-title">Register Your Profile Today</h3>
           <div className="text-center">
             Already registered?{" "}

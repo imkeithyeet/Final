@@ -34,6 +34,12 @@
     position: relative;
     top: 2em;
   }
+  .register{
+    padding-left: 12%;
+    padding-right: 12%;
+    position: relative;
+    top: 1em;
+  }
   
   .Auth-form-title {
     text-align: center;
@@ -69,7 +75,7 @@
     position: relative;
     display: flex;
    left: 7.9em;
-   top: 1.7em;
+   top: 1em;
   }
   .submit{
     position: relative;
