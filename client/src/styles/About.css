@@ -22,16 +22,12 @@
     font-family: "Times New Roman", Times, serif;
 
 }
-.h1{
+.H{
     overflow-x:auto;
-    position: relative;
-    display: absolute;
-    top: 340px;
-    right: 9em;
+    position: absolute;
+    display: inline-block;
     font-size:55px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-family: "Times New Roman", Times, serif;
+    right: 6em;
 }
 .p1{
     overflow-x:auto;
