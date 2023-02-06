@@ -1,14 +1,14 @@
 
 import React from 'react';
-import './App.css';
-import Home from './components/pages/Home/Home';
+import '../styles/App.css';
+import Home from './pages/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer.js';
-import Contact from './components/pages/Contact';
-import LoginForm from './components/LoginForm';
+import Navbar from './Navbar';
+import Footer from './Footer.js';
+import Contact from './pages/Contact';
+import LoginForm from './LoginForm';
 
-import About from './components/pages/About';
+import About from './pages/About';
 
 
 
