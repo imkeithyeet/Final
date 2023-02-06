@@ -28,7 +28,7 @@ export const homeObjOne = {
     lightTextDesc: false,
     headline: 'Super fast and simple online dating process that works',
     description:
-      "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+      "Get everything set up and ready in under 10 minutes. All you need to do is add your information/pictures and you're ready to go.",
     imgStart: 'start',
    
   };

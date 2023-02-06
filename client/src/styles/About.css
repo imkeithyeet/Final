@@ -2,19 +2,34 @@
     position: relative;
     display: flex;
     justify-content: center;
-    font-size: 60px;
-    top: 50px;
-    color: rgb(61, 65, 87);
+    font-size: 90px;
+    top: 390px;
+    left: 330px;
+    color: rgb(0, 0, 0);
 
 }
 .p1{
     position: relative;
-    display: flex;
-    font-size: 30px;
-    top: 200px;
-    padding-left: 400px;
-    padding-right: 400px;
-    color: rgb(61, 65, 87);
+    display: block;
+    font-size: 35px;
+    top: -350px;
+    left: 940px;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    width: auto;
+    height: auto;
+
+}
+.p2{
+    position: relative;
+    display: block;
+    font-size: 35px;
+    top: -350px;
+    left: 940px;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    width: auto;
+    height: auto;
 }
 .P{
     position: relative;
@@ -26,9 +41,10 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 29%;
-    border-radius: 7px;
+    width: 40%;
+    border-radius: 10px;
     position: relative;
     bottom: -90px;
+    left: -30em;
 
 }

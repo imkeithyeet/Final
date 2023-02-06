@@ -25,7 +25,7 @@ export default function LoginForm({onLogin, props}) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ firstName, email, password }),
+      body: JSON.stringify({ email, password }),
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
@@ -74,15 +74,6 @@ export default function LoginForm({onLogin, props}) {
           <span className="link-primary" onClick={changeAuthMode}>
             Sign Up
           </span>
-        </div>
-        <div className="form-group mt-3">
-          <label>First Name</label>
-          <input
-            type="first name"
-            className="form-control mt-1"
-            placeholder="first name"
-            onChange={(e) => setFirstName(e.target.value)}
-          />
         </div>
         <div className="form-group mt-3">
           <label>Email address</label>

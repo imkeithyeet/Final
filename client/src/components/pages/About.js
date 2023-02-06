@@ -8,9 +8,10 @@ function About() {
     return(
         <wrapper>
             <div className="about">
-                <h5 className="H5">The Story</h5>
-                    <img className="Img"src={"https://media.istockphoto.com/id/1269761486/photo/happy-family-playing-funny-game-having-fun-together.jpg?s=612x612&w=0&k=20&c=HsXiMFjUQ3kk22RrT9n9LrMu8-3NAMClFa9pRWaGj6U="} alt="family" />
-                <p1  className="p1">We are on a mission to help customers sell their potential house and list them onto our website for ease of mind and take care of the headache of home selling with just a click of a button. </p1>
+                <h5 className="H5">At the heart of Us.</h5>
+                    <img className="Img"src={"https://i.pinimg.com/736x/bf/30/b9/bf30b9d3a4be30122a45cc8162ed1124.jpg"} alt="family" />
+                <p1 className="p1">Relationships are at the core of everything we do. </p1>
+                <p2 className="p2">Relationships are at the core of everything we do. </p2>
             </div>
         </wrapper>
     )
