@@ -9,9 +9,9 @@
     cursor: pointer;
     transition: all 0.3s ease-out;
     position: relative;
-    display: flex;
+    display: inline-block;
     left: 17.1%;
-    bottom: 290px;
+    bottom: 10em;
   }
 
 .button:hover {

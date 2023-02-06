@@ -29,6 +29,9 @@
     font-size:55px;
     right: 6em;
     top: 23.5em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
 }
 .p1{
     overflow-x:auto;
