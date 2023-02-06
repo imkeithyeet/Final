@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import '../styles/LoginForm.css'
 
 
-export default function LoginForm({onLogin, props, showLogin, setShowLogin}) {
+export default function LoginForm({onLogin, showLogin, setShowLogin}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);

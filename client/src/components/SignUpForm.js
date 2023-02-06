@@ -112,8 +112,6 @@ function SignUpForm  ({onLogin, showLogin, setShowLogin}) {
         ))}
       </div>
         </form>
-        
-
         </form>
     </div>
     );

@@ -81,7 +81,14 @@
     position: relative;
     display: flex;
    justify-content: center;
+
   }
+.btn.btn-primary:hover{
+  background-color: #2850a1;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
   .link-primary{
     color: blue;
     cursor: pointer; 
