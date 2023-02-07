@@ -8,6 +8,7 @@ export default function LoginForm({ showLogin, setShowLogin}) {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [user, setUser] = useState(null)
   let navigate = useNavigate()
   // let [authMode, setAuthMode] = useState("signing")
 
@@ -29,14 +30,19 @@ export default function LoginForm({ showLogin, setShowLogin}) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => (user));
+        r.json().then((data) => {
+          // you logged in successfully. set user state to the info the server returned (user)
+          // redirect if you want
+          setUser(data);
+          navigate("/Profile")
+        });
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
     });
   }
 
-  
+  console.log(email, password)
 
     return (
       <div className="Auth-form-container">
@@ -68,9 +74,7 @@ export default function LoginForm({ showLogin, setShowLogin}) {
           />
         </div>
         <div className="submit">
-          <button onClick={()=>{
-            navigate("/Profile")
-          }}  type="submit" className="btn btn-primary">
+          <button  type="submit" className="btn btn-primary">
           {isLoading ? "Loading..." : "Login"} 
           </button>
         </div>

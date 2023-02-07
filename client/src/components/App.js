@@ -16,11 +16,14 @@ import Profile from './pages/Profile';
 
 function App() {
   const [user, setUser] = useState(null);
+  const [authorized, setAuthorized]= useState(false)
 
   useEffect(() => {
     fetch("/me").then((r) => {
       if (r.ok) {
-        r.json().then((user) => setUser(user));
+        r.json().then((user) => {
+        setAuthorized(true)
+        setUser(user)});
       }
     });
   }, []);
@@ -42,7 +45,7 @@ function App() {
   return(
     <Router>
     <Routes>
-    <Route path='/profile'  element={()=> <Profile authorized={false}/>} />
+    <Route path='/Profile'  element={()=> <Profile authorized={authorized}/>} />
         </Routes>
         <Footer />
         </Router>
