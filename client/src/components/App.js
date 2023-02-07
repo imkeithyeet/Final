@@ -8,7 +8,9 @@ import Footer from './Footer.js';
 import Contact from './pages/Contact';
 import Login from './Login';
 import About from './pages/About';
-import Profile from './pages/Profile';
+// import Dashboard from './Dashboard';
+
+
 
 
 
@@ -31,7 +33,7 @@ function App() {
   if (!user)
   return (
     <Router>
-      <Navbar  />
+      <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/About' exact element={<About />} />
@@ -45,7 +47,7 @@ function App() {
   return(
     <Router>
     <Routes>
-    <Route path='/Profile'  element={()=> <Profile authorized={authorized}/>} />
+    {/* <Route path='/Dashboard'  element={()=> <Dashboard authorized={authorized}/>} /> */}
         </Routes>
         <Footer />
         </Router>

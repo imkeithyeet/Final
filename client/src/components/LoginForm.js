@@ -34,7 +34,7 @@ export default function LoginForm({ showLogin, setShowLogin}) {
           // you logged in successfully. set user state to the info the server returned (user)
           // redirect if you want
           setUser(data);
-          navigate("/Profile")
+          navigate("/Dashboard")
         });
       } else {
         r.json().then((err) => setErrors(err.errors));
