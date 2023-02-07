@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # Leave this here to help deploy your app later!
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
-  get "/me", to: "users#show"
+  get "/me", to: "sessions#show"
   post "/signup", to: "users#create"
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
   get '/dist/output.css', to: redirect('/src/styles/index.css')

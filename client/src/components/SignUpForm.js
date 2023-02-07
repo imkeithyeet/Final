@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 
 function SignUpForm  ({ showLogin, setShowLogin}) {
-    // let [authMode, setAuthMode] = useState("signing")
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
@@ -10,10 +9,7 @@ function SignUpForm  ({ showLogin, setShowLogin}) {
     const [lastName, setLastName] = useState("");
     const [firstName, setFirstName] = useState("");
 
-    // const changeAuthMode = () => {
-
-    //     setAuthMode(authMode === "signing" ? "signup" : "signing")
-    //   }
+    
     function handleSubmit(e) {
         e.preventDefault();
         setErrors([]);

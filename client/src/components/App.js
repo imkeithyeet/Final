@@ -11,30 +11,30 @@ import Dashboard from './Dashboard';
 import NavBarLoggedIn from './NavBarLoggedIn';
 
 function App() {
-  const [user, setUser] = useState(null);
-  const [authorized, setAuthorized] = useState(false);
+  const [user, setUser] = useState();
 
   useEffect(() => {
     fetch("/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => {
-          setAuthorized(false);
           setUser(user);
         });
+      }  else {
+        debugger
+        setUser(null)
       }
     });
   }, []);
-  console.log(authorized)
 
   return (
     <Router>
-      {authorized ? <NavBarLoggedIn />  :<Navbar />}
+      {user ? <NavBarLoggedIn />  :<Navbar />}
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/About" exact element={<About />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/Dashboard" element={<Dashboard authorized={authorized} />} />
+        <Route path="/login" element={<Login user={user} setUser={setUser} />} />
+        <Route path="/Dashboard" element={<Dashboard user={user} />} />
       </Routes>
       <Footer />
     </Router>

@@ -3,12 +3,11 @@ import { useNavigate } from "react-router-dom"
 import '../styles/LoginForm.css'
 
 
-export default function LoginForm({ showLogin, setShowLogin}) {
+export default function LoginForm({ setUser, showLogin, setShowLogin}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [user, setUser] = useState(null)
   let navigate = useNavigate()
  
 
@@ -24,29 +23,21 @@ export default function LoginForm({ showLogin, setShowLogin}) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-
         r.json().then((data) => {
           if (data.error){
             console.log(data.error)
-
             return  
-            
           }
           // you logged in successfully. set user state to the info the server returned (user)
           // redirect if you want
           console.log(data)
-
           setUser(data);
-          navigate("/Dashboard")
-
         });
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
     });
   }
-
-
 
     return (
       <div className="Auth-form-container">
