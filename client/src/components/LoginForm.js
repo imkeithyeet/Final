@@ -10,13 +10,7 @@ export default function LoginForm({ showLogin, setShowLogin}) {
   const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState(null)
   let navigate = useNavigate()
-  // let [authMode, setAuthMode] = useState("signing")
-
-
-  // const changeAuthMode = () => {
-
-  //   setAuthMode(authMode === "signing" ? "signup" : "signing")
-  // }
+ 
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -30,11 +24,21 @@ export default function LoginForm({ showLogin, setShowLogin}) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
+
         r.json().then((data) => {
+          if (data.error){
+            console.log(data.error)
+
+            return  
+            
+          }
           // you logged in successfully. set user state to the info the server returned (user)
           // redirect if you want
+          console.log(data)
+
           setUser(data);
           navigate("/Dashboard")
+
         });
       } else {
         r.json().then((err) => setErrors(err.errors));
@@ -42,7 +46,7 @@ export default function LoginForm({ showLogin, setShowLogin}) {
     });
   }
 
-  console.log(email, password)
+
 
     return (
       <div className="Auth-form-container">
