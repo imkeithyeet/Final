@@ -11,9 +11,12 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import '../styles/NavBarLoggedIn.css'
+import { Link } from "react-router-dom"
 
-const pages = ['Profile(Spotlight)', 'Matches/Messages'];
-const settings = ['My Profile','Logout'];
+
+const pages = ['Profile(Spotlight)', 'Matches'];
+const settings = ['My Profile'];
 
 
 function NavBarLoggedIn() {
@@ -46,13 +49,17 @@ function NavBarLoggedIn() {
   };
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container  className="container"maxWidth="xl" >
         <Toolbar disableGutters>
+        <Link  to ='/Dashboard' className="logo" onClick={handleCloseUserMenu}>
+                        <img src="../images/Logo.png" alt="logo" />
+
+                    </Link> 
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/Dashboard"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -61,9 +68,9 @@ function NavBarLoggedIn() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              fontSize: '14px',
             }}
           >
-            Us Dating
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -102,30 +109,12 @@ function NavBarLoggedIn() {
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box className="links" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'black', display: 'block', position: 'relative'  }}
               >
                 {page}
               </Button>

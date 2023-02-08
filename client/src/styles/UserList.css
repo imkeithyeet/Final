@@ -1,5 +1,8 @@
 .names{
     display: flex;
     position: relative;
+    top: 3em;
     text-align: center;
-}
+    align-items: center;
+    justify-content: center;
+  }

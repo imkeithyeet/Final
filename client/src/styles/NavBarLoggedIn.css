@@ -1,0 +1,23 @@
+.logo{
+    position: relative;
+    display: flex;
+    top: -30px;
+    right: 120px;
+   width: 300px;
+   height: 220px;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+   width: 300px;
+   height: 150px;
+}
+.links{
+    position: relative;
+    display: flex;
+    top: -30px;
+    right: 120px;
+    justify-content: right;
+}
