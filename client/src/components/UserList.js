@@ -12,11 +12,11 @@ function UserList ()  {
     
     return (
         <div>
-            <ul className="names">
+            {/* <ul className="names">
         {users.map(user => (
           <ul key={user.id}>{user.first_name}{user.last_name}</ul>
         ))}
-      </ul>
+      </ul> */}
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/HeroSection.css';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
+// import { Button } from './Button';
+// import { Link } from 'react-router-dom';
 
 function HeroSection({
   lightBg,
