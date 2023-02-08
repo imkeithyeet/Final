@@ -32,16 +32,17 @@ const Property = () => {
 
                 <div className="picture">
                     <img src={user.photos[0].image_url} alt="image" />
-                    {/* <img src={user.photos[0].image_url2} alt="image" /> */}
+                    <img src={user.photos[0].image_url2} alt="image" />
                 </div>
 
                 <div className="name">
-                    <h1>{user.first_name} {user.last_name}</h1>           
+                    <h1>{user.first_name} {user.last_name}</h1>          
                     <div className="mark">
                       <i class="fa-solid fa-location-dot"></i>
                        <p1>{user.gender}</p1>
                     </div>
                     <p1>{user.age}</p1>
+                    <p>{user.horoscope}</p> 
                 </div>
                 <div className="property-content">
                     <div className="mark">

@@ -23,6 +23,8 @@
     box-shadow: 2px 2px 3px 3px rgb(173, 171, 171);
     transition: background-color 1s ease-out 0.1ms;
     height: 400px;
+    max-height: 500px;
+    overflow-y: scroll;
 }
 .single-property:hover{
     background-color: #e1dfdf;
@@ -34,6 +36,7 @@
     display: flex;
     position: relative;
     width:600px;
+
 }
 .property-thumb{
     position: relative;
@@ -51,12 +54,15 @@
     font-weight: 500;
     z-index: 1;
     font-family: "Poppins", sans-serif;
+    
 }
 .picture img{
-    float: middle;
-    width:  200px;
-    height: 200px;
+    float: left;
+    width:  300px;
+    height:22.3em;
     object-fit: cover;
+    position: relative;
+    display: flex;
     
 }
 
