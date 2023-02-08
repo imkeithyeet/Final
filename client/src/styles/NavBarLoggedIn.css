@@ -6,21 +6,15 @@
    width: 300px;
    height: auto;
 }
-
-
-.container{
-    position: relative;
-    display: flex;
-   width: 300px;
-   height: 133px;
-}
 .links{
     position: relative;
     display: flex;
     top: -90px;
     right: 120px;
     justify-content: right;
+
 }
+
 .icon{
     position: relative;
     display: flex;

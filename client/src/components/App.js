@@ -20,7 +20,6 @@ function App() {
           setUser(user);
         });
       }  else {
-        // debugger
         setUser(null)
       }
     });
@@ -28,7 +27,7 @@ function App() {
 
   return (
     <Router>
-      {user ?  <NavBarLoggedIn /> :<Navbar />}
+      {user ?  <NavBarLoggedIn /> : <Navbar />}
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/About" exact element={<About />} />

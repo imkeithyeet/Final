@@ -49,7 +49,7 @@ function NavBarLoggedIn() {
   };
   return (
     <AppBar position="static">
-      <Container  className="container"maxWidth="xl" >
+   <Container className="container" maxWidth="xl" style={{height: '140px'}}>
         <Toolbar disableGutters>
         <Link  to ='/Dashboard' className="logo" onClick={handleCloseUserMenu}>
                         <img src="../images/Logo.png" alt="logo" />
@@ -114,7 +114,7 @@ function NavBarLoggedIn() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block', position: 'relative'  }}
+                sx={{ my: 2, color: 'white', display: 'block', position: 'relative'  }}
               >
                 {page}
               </Button>
