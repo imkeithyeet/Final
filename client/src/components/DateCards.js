@@ -30,9 +30,9 @@ const Property = () => {
           <div className="single-property">
             <div className="card">
 
-                <div className="property-thumb">
-                    <div className="property-tag"> For Sale </div>
-                    <img src={user.image_url} alt="image" />
+                <div className="picture">
+                    <img src={user.photos[0].image_url} alt="image" />
+                    {/* <img src={user.photos[0].image_url2} alt="image" /> */}
                 </div>
 
                 <div className="name">
@@ -43,17 +43,13 @@ const Property = () => {
                     </div>
                     <p1>{user.age}</p1>
                 </div>
-
                 <div className="property-content">
                     <div className="mark">
                       <i class="fa-solid fa-location-dot"></i>
-                       <h3>{user.location}</h3>
+                       <h3>{user.occupation}</h3>
                     </div>
                     <h3>{user.bio}</h3>
                 </div>
-                <div>
-                    <p>{user.horoscope}</p>
-                    </div>
             </div>
           </div>
         </div>
