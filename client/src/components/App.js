@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../styles/App.css';
 import Home from './pages/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar';
 import Footer from './Footer.js';
 import Contact from './pages/Contact';
 import Login from './Login';
