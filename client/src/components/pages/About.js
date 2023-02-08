@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from '.././Navbar';
+
 import  "../../styles/About.css";
 
 
@@ -7,6 +9,7 @@ function About() {
 
     return(
         <wrapper>
+            <Navbar />
             <div className="about">
                 <h5 className="H5">At the heart of Us.</h5>
                     <img className="Img"src={"https://i.pinimg.com/736x/bf/30/b9/bf30b9d3a4be30122a45cc8162ed1124.jpg"} alt="family" />

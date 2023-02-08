@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,21 +15,24 @@ import MenuItem from '@mui/material/MenuItem';
 import '../styles/NavBarLoggedIn.css'
 import { Link } from "react-router-dom"
 
-
-const pages = ['Profile(Spotlight)', 'Matches'];
+const pages = ['Profile(Spotlight)', 'Matches', 'Contact Us'];
 const settings = ['My Profile'];
 
 
-function NavBarLoggedIn() {
+function NavBarLoggedIn({setUser}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  function handleLogoutClick({setUser}) {
+  const navigate = useNavigate();
+
+  function handleLogoutClick() {
+    
     fetch("/logout", 
     { method: "DELETE" })
     .then((r) => {
       if (r.ok) {
-        setUser(null);
+        navigate('/');
+        setUser(null)
       }
     });
   } 
@@ -148,9 +152,11 @@ function NavBarLoggedIn() {
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
-              <Button variant="outline"  onClick={handleLogoutClick}>
+             <MenuItem onClick={handleLogoutClick}> Logout
+                </MenuItem>
+              {/* <Button variant="outline"  onClick={handleLogoutClick}>
               Logout
-            </Button>
+            </Button> */}
             </Menu>
           </Box>
         </Toolbar>

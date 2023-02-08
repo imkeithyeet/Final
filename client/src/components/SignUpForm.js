@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import Navbar from './Navbar';
+
 
 function SignUpForm  ({  setUser,showLogin, setShowLogin}) {
     const [email, setEmail] = useState("");
@@ -45,6 +47,8 @@ function SignUpForm  ({  setUser,showLogin, setShowLogin}) {
         });
       }
     return (
+      <>
+      <Navbar />
         <div className="Auth-form-container">
         <form className="signup box" onSubmit={handleSubmit}>
         <div className="register">
@@ -117,6 +121,7 @@ function SignUpForm  ({  setUser,showLogin, setShowLogin}) {
       </div>
         </form>
     </div>
+    </>
     );
 }
 

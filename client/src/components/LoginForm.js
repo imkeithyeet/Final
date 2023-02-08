@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import { useNavigate } from "react-router-dom"
 import '../styles/LoginForm.css'
+import Navbar from './Navbar';
+
 
 
 export default function LoginForm({ setUser, showLogin, setShowLogin}) {
@@ -40,6 +42,8 @@ export default function LoginForm({ setUser, showLogin, setShowLogin}) {
   }
 
     return (
+      <>
+      <Navbar />
       <div className="Auth-form-container">
     <form className="Auth-form" onSubmit={handleSubmit}>
       <div className="Auth-form-content">
@@ -85,6 +89,7 @@ export default function LoginForm({ setUser, showLogin, setShowLogin}) {
       
     </form>
   </div>
+  </>
 )
 
 }

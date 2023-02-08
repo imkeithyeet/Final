@@ -43,10 +43,10 @@
 }
 .column{
     padding-left: 1rem;
-    padding-right: rem;
+    padding-right: 1rem;
     display: flex;
     position: relative;
-    width:600px;
+    width:550px;
 
 }
 .property-thumb{
@@ -69,7 +69,7 @@
 }
 .picture img{
     float: left;
-    width:  300px;
+    width:  280px;
     height:22.3em;
     object-fit: cover;
     position: relative;

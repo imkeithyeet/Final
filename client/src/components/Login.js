@@ -9,7 +9,7 @@ function Login ({user, setUser}) {
     }
     return (
         <div>
-        { showLogin ? <LoginForm setUser={setUser} showLogin={showLogin} setShowLogin={setShowLogin} /> : <SignUpForm setShowLogin={setShowLogin} showLogin={showLogin} /> }
+        { showLogin ? <LoginForm setUser={setUser} showLogin={showLogin} setShowLogin={setShowLogin} /> : <SignUpForm setUser={setUser} setShowLogin={setShowLogin} showLogin={showLogin} /> }
         </div>
     );
 }

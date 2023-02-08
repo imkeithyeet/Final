@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 import Login from './Login';
 import About from './pages/About';
 import Dashboard from './Dashboard';
-import NavBarLoggedIn from './NavBarLoggedIn';
+// import NavBarLoggedIn from './NavBarLoggedIn';
 
 function App() {
   const [user, setUser] = useState();
@@ -27,13 +27,13 @@ function App() {
 
   return (
     <Router>
-      {user ?  <NavBarLoggedIn /> : <Navbar />}
+      {/* {user ?  <NavBarLoggedIn /> : <Navbar />} */}
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/About" exact element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/login" element={<Login user={user} setUser={setUser} />} />
-        <Route path="/Dashboard" element={<Dashboard user={user} />} />
+        <Route path="/Dashboard" element={<Dashboard user={user} setUser={setUser}/>} />
       </Routes>
       <Footer />
     </Router>
