@@ -1,10 +1,10 @@
 .logo{
     position: relative;
     display: flex;
-    top: -30px;
-    right: 120px;
+    top: -92px;
+    right: 110px;
    width: 300px;
-   height: 220px;
+   height: auto;
 }
 
 
@@ -12,12 +12,20 @@
     position: relative;
     display: flex;
    width: 300px;
-   height: 150px;
+   height: 133px;
 }
 .links{
     position: relative;
     display: flex;
-    top: -30px;
+    top: -90px;
     right: 120px;
     justify-content: right;
+}
+.icon{
+    position: relative;
+    display: flex;
+    top: -90px;
+    right: 20px;
+    transform: scale(1.5)
+  
 }

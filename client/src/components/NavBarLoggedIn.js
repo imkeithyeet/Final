@@ -55,7 +55,7 @@ function NavBarLoggedIn() {
                         <img src="../images/Logo.png" alt="logo" />
 
                     </Link> 
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -71,7 +71,7 @@ function NavBarLoggedIn() {
               fontSize: '14px',
             }}
           >
-          </Typography>
+          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -122,7 +122,7 @@ function NavBarLoggedIn() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip  className="icon"title="Open Profile">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Beverly Zhu" src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/2022/02/11/ade01cd6-4d97-4f76-a9cb-22020e2d1c76_a21ac38f.jpg?itok=Fb3hVG0n" />
               </IconButton>
@@ -143,9 +143,8 @@ function NavBarLoggedIn() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-            
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <MenuItem  key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
