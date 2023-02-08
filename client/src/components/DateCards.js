@@ -34,7 +34,7 @@ const Property = () => {
                     <img src={user.photos[0].image_url} alt="image" />
                     <img src={user.photos[0].image_url2} alt="image" />
                 </div>
-
+                    <wrapper className="captions">
                 <div className="name">
                     <h1>{user.first_name} {user.last_name}</h1>          
                     <div className="mark">
@@ -42,15 +42,18 @@ const Property = () => {
                        <p1>{user.gender}</p1>
                     </div>
                     <p1>{user.age}</p1>
+                    <p>{user.location}</p> 
                     <p>{user.horoscope}</p> 
                 </div>
+                </wrapper>
                 <div className="property-content">
                     <div className="mark">
                       <i class="fa-solid fa-location-dot"></i>
-                       <h3>{user.occupation}</h3>
+                       <h3 className="h3">{user.occupation}</h3>
                     </div>
-                    <h3>{user.bio}</h3>
+                    <h3 className="h3">{user.bio}</h3>
                 </div>
+                
             </div>
           </div>
         </div>

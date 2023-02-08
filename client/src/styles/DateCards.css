@@ -30,6 +30,17 @@
     background-color: #e1dfdf;
 
 }
+.captions{
+    position: relative;
+    display:flex;
+    justify-content: center;
+}
+.h3{
+    position: relative;
+    display:flex;
+    justify-content: left;
+    margin-top: 30px;
+}
 .column{
     padding-left: 1rem;
     padding-right: rem;
@@ -63,6 +74,7 @@
     object-fit: cover;
     position: relative;
     display: flex;
+    border-radius:10px;
     
 }
 
