@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 
-function SignUpForm  ({ showLogin, setShowLogin}) {
+function SignUpForm  ({  setUser,showLogin, setShowLogin}) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
@@ -29,7 +29,16 @@ function SignUpForm  ({ showLogin, setShowLogin}) {
         }).then((r) => {
           setIsLoading(false);
           if (r.ok) {
-            r.json().then((user) => user);
+            r.json().then((data) => {
+              if (data.error){
+                console.log(data.error)
+                return  
+              }
+              // you logged in successfully. set user state to the info the server returned (user)
+              // redirect if you want
+              console.log(data)
+              setUser(data);
+            });
           } else {
             r.json().then((err) => setErrors(err.errors));
           }

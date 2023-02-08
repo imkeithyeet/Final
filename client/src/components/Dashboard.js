@@ -1,20 +1,24 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom'
-import NavBarLoggedIn  from './NavBarLoggedIn';
+import NavBarLoggedIn from './NavBarLoggedIn';
+import UserList from './UserList';
 
 
-const Dashboard = ({user}) => {
-    if (user === null){
-        return <Navigate to ="/login"/>
-    } else if (user === undefined) {
-        return null
-    }
-    return (
-        <div>
-            <NavBarLoggedIn /> 
-           <h1>hgrg</h1>
-        </div>
-    );
-}
+
+const Dashboard = ({user, users}) => {
+  if (user === null) {
+    return <Navigate to="/login"/>;
+  } else if (user === undefined) {
+    return null;
+  }
+ 
+  return (
+    <div>
+      <NavBarLoggedIn />
+      <UserList />
+
+    </div>
+  );
+};
 
 export default Dashboard;
