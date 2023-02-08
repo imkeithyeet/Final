@@ -16,18 +16,23 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 .single-property{
-    width: 350px;
+    width: 540px;
     border-radius: 1rem;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
     margin-bottom: 30px;
     overflow: hidden;
+    box-shadow: 2px 2px 3px 3px rgb(173, 171, 171);
+    transition: background-color 1s ease-out 0.1ms
+}
+.single-property:hover{
+    background-color: #e1dfdf;
+
 }
 .column{
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
     position: relative;
-    height: 400px;
+    height: 330px;
 }
 .property-thumb{
     position: relative;
@@ -54,7 +59,7 @@
 .single-property:hover .property-thumb img{
     transform: scale(1.06);
 }
-.property-content{
+.name{
     padding: 25px;
     border-bottom: 1px solid #e8e8e8;
 }
