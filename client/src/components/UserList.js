@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import '../styles/UserList.css'
+
 
 function UserList ()  {
     const [users, setUsers]=useState([])
@@ -12,7 +14,7 @@ function UserList ()  {
         <div>
             <ul className="names">
         {users.map(user => (
-          <li key={user.id}>{user.first_name}{user.last_name}</li>
+          <ul key={user.id}>{user.first_name}{user.last_name}</ul>
         ))}
       </ul>
         </div>
