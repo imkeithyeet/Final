@@ -8,7 +8,6 @@ import Contact from './pages/Contact';
 import Login from './Login';
 import About from './pages/About';
 import Dashboard from './Dashboard';
-// import NavBarLoggedIn from './NavBarLoggedIn';
 
 function App() {
   const [user, setUser] = useState();
@@ -27,7 +26,6 @@ function App() {
 
   return (
     <Router>
-      {/* {user ?  <NavBarLoggedIn /> : <Navbar />} */}
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/About" exact element={<About />} />
