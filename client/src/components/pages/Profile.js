@@ -28,7 +28,9 @@ const Profile = () => {
     <div className="row">
 
     {
-        users.map((user)=>{
+        users
+        .filter(user => user.id === 2 || user.id === 3 || user.id === 6 || user.id === 7)
+        .map((user)=>{
             return(
                 <div className="column">
           <div className="single">

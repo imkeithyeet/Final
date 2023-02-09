@@ -25,6 +25,7 @@ const DateCards = () => {
 
     {
         users.map((user)=>{
+            if (user.id === 2|| user.id === 3 || user.id === 4  || user.id === 5 || user.id === 6  || user.id === 7 || user.id === 8) {
             return(
                 <div className="column">
           <div className="single-property">
@@ -60,6 +61,8 @@ const DateCards = () => {
           </div>
         </div>
             )
+            }
+            return null
         })
     }     
     </div>
