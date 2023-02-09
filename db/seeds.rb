@@ -16,6 +16,8 @@ u5 = User.create(first_name:"Sam",last_name:"Smith", email: 'sam123@gmail.com', 
 u6 = User.create(first_name:"Bryan",last_name:"Kim", email: 'yessir@gmail.com', password: "bet420", gender: "Male", age:"26",school:"Cal Poly Pomona", occupation: "Engineer",location: "Los Angeles California", bio: "Big partygoer that loves to go out and have some fun.", horoscope: "Libra")
 u7 = User.create(first_name:"Max",last_name:"Anderson", email: 'spider@gmail.com', password: "yoda2007", gender: "Male", age:"26",school:"Mount San Antonio College",occupation: "Unemployed", location: "Los Angeles California", bio: "Big gamer that uses twitch to stream my games to viewers.", horoscope: "Scorpio")
 u8 = User.create(first_name:"Leana",last_name:"Deeb", email: 'gymshark@gmail.com', password: "fitness1997", gender: "Female", age:"25",school:"Uc Berkeley",occupation: "Fitness Trainer", location: "Seattle", bio: "A full time fitness trainer that loves healthy living and taking risks.", horoscope: "Aries")
+u9 = User.create(first_name:"Barry",last_name:"Allen", email: 'flash@gmail.com', password: "gofash20", gender: "Male", age:"23",school:"Star Lab University",occupation: "Scientist", location: "Central City", bio: "I love to study up on new things such as technology and quantum physics that breaks the time berrier.", horoscope: "Aries")
+u10 = User.create(first_name:"Colton",last_name:"Haynes", email: 'speedy@gmail.com', password: "arrowtime@gmail.com", gender: "Them", age:"26",school:"Dropout",occupation: "Actor", location: "Star City", bio: "A big fan of archery and to drink with friends in my free time as well.", horoscope: "Cancer")
 
 
 
@@ -26,6 +28,10 @@ m3 = Match.create(user_1_id: u5.id, user_2_id: u7.id, is_match: true)
 m4 = Match.create(user_1_id: u6, user_2_id: u8.id, is_match: true)
 m5 = Match.create(user_1_id: u1.id, user_2_id: u7.id, is_match: false)
 m5 = Match.create(user_1_id: u3.id, user_2_id: u4.id, is_match: true)
+m6 = Match.create(user_1_id: u5.id, user_2_id: u10.id, is_match: true)
+m7 = Match.create(user_1_id: u8.id, user_2_id: u9.id, is_match: true)
+
+
 
 
 
@@ -42,6 +48,8 @@ image_url2:"https://static01.nyt.com/images/2023/01/27/multimedia/26SMITH-REVIEW
 p6 = Photo.create(image_url: 'https://media.istockphoto.com/id/1288538088/photo/portrait-young-confident-smart-asian-businessman-look-at-camera-and-smile.jpg?s=612x612&w=0&k=20&c=qkOwVHZFC-fbtbTnufVGaXFhnQBcfEjzbu5ThSXVLR0=', image_url2:"https://d3fg8lkx8f5xs7.cloudfront.net/825499700346384384", user:u6 )
 p7 = Photo.create(image_url: 'https://images.squarespace-cdn.com/content/v1/5a30b5abdc2b4ab3bb9fc264/1593675130227-C3H2TDF4DKMKAUSRUPWM/maxanderson.jpg', image_url2:"https://pbs.twimg.com/profile_images/632715182863712256/qd9NCS3W_400x400.jpg", user:u7 )
 p8 = Photo.create(image_url: 'https://cdn.shopify.com/s/files/1/0560/4189/8081/files/IMAGE_5.jpg?v=1669151761&width=1500', image_url2:"https://i.pinimg.com/736x/0f/ce/90/0fce9069b71589fda32847817775e4b0.jpg", image_url3:"https://i.pinimg.com/564x/ff/87/37/ff8737dcbf4f655213c943d53fab59c8.jpg", user:u8 )
+p9 = Photo.create(image_url: 'https://decider.com/wp-content/uploads/2019/10/the-flash-a-flash-of-lightning.jpg?quality=75&strip=all', image_url2:"https://i.pinimg.com/originals/e1/79/07/e17907903731005519f221809fbf620c.jpg", user:u9 )
+p10 = Photo.create(image_url: 'https://www.gannett-cdn.com/-mm-/14d38e3329c6f1f889b4c48cfb975ddc97bd20bb/c=0-0-3495-1975/local/-/media/2016/05/06/USATODAY/USATODAY/635981225330662373-AP-People-Colton-Haynes.jpg?width=3200&height=1809&fit=crop&format=pjpg&auto=webp', image_url2:"https://www.hollywoodreporter.com/wp-content/uploads/2022/05/Colton-Haynes-attends-Elton-John-AIDS-Foundation-Getty-H-2022.jpg?w=1296", image_url3:"https://akns-images.eonline.com/eol_images/Entire_Site/201602/rs_1024x768-160102134632-1024.colton-haynes.cm.1216.jpg?fit=around%7C1024:768&output-quality=90&crop=1024:768;center,top",user:u10 )
 
 
 
@@ -50,6 +58,11 @@ ms1 = Message.create(body: "",  sender_id: u2.id, recipient_id: u1.id)
 ms2 = Message.create(body: "",  sender_id: u5.id, recipient_id: u7.id)
 ms3 = Message.create(body: "",  sender_id: u6.id, recipient_id: u8.id)
 ms4 = Message.create(body: "",  sender_id: u3.id, recipient_id: u4.id)
+ms5 = Message.create(body: "",  sender_id: u8.id, recipient_id: u9.id)
+ms6 = Message.create(body: "",  sender_id: u5.id, recipient_id: u10.id)
+
+
+
 
 
 
