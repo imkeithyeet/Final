@@ -8,18 +8,7 @@
    font-family: 'times new roman';
    top:0.19em;
 }
-.cards{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    position: sticky;
-    width:600px;
-    overflow-y: hidden;
 
-
-
-    
-}
 .center p4{
     position: relative;
     display: flex;

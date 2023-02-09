@@ -37,6 +37,7 @@ const Profile = () => {
                 <div className="picture">
                     <img src={user.photos[0].image_url} alt="image" />
                     <img src={user.photos[0].image_url2} alt="image" />
+                    <img src={user.photos[0].image_url3} alt="image" />
                 </div>
                     <wrapper className="captions">
                 <div className="name">
