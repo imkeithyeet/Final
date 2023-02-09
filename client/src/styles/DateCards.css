@@ -14,6 +14,14 @@
    font-family: 'times new roman';
    top:0.19em;
 }
+.heart{
+    position: relative;
+   display: flex;
+   justify-content: center;
+   top:1em;
+   width: 240px ;
+   height: 240px ;
+}
 .row{
     padding-top: 4rem;
     display: grid;

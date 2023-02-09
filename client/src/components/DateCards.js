@@ -1,5 +1,8 @@
 import React,{Fragment,useState, useEffect} from 'react'
 import '../styles/DateCards.css';
+import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
+import NotInterestedOutlinedIcon from '@mui/icons-material/NotInterestedOutlined';
+// import { IconButton } from '@material-ui/core';
 
 
 const DateCards = () => {
@@ -16,21 +19,19 @@ const DateCards = () => {
     <Fragment>
 
     <section className="property">
-
     <div className="center">
     <h3>Start Finding your Match</h3>
     </div>
 
     <div className="row">
-
     {
         users.map((user)=>{
-            if (user.id === 2|| user.id === 3 || user.id === 4  || user.id === 5 || user.id === 6  || user.id === 7 || user.id === 8 || user.id === 9 || user.id === 10) {
+            if (user.id === 2 | user.id === 3 || user.id === 4  || user.id === 5 || user.id === 6  || user.id === 7 || user.id === 8 || user.id === 9 || user.id === 10) {
             return(
+                
                 <div key={`card_user_${user.id}`}className="column">
           <div className="single-property">
             <div className="card">
-
                 <div className="picture">
                     <img src={user.photos[0].image_url} alt="image" />
                     <img src={user.photos[0].image_url2} alt="image" />
@@ -56,7 +57,14 @@ const DateCards = () => {
                     </div>
                     <h3 className="h3">✍️ {user.bio}</h3>
                 </div>
-                
+                <div className="heart">
+  {/* <IconButton> */}
+    <NotInterestedOutlinedIcon />
+  {/* </IconButton> */}
+  {/* <IconButton> */}
+    <FavoriteOutlinedIcon />
+  {/* </IconButton> */}
+</div>
             </div>
           </div>
         </div>

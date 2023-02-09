@@ -120,7 +120,7 @@ function NavBarLoggedIn({setUser, user}) {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip  className="icon"title={user?.first_name} >
+            <Tooltip  className="icon"title={`${user?.first_name} ${user?.last_name}`} >
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt={user?.first_name} src={user?.photos ? user.photos[0].image_url : null} />
               </IconButton>
