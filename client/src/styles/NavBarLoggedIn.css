@@ -1,0 +1,27 @@
+.logo{
+    position: relative;
+    display: flex;
+    top: -92px;
+    right: 110px;
+   width: 300px;
+   height: auto;
+}
+.links{
+    position: relative;
+    display: flex;
+    top: -90px;
+    right: 120px;
+    justify-content: right;
+
+}
+
+.icon{
+    position: relative;
+    display: flex;
+    top: -90px;
+    right: 20px;
+    transform: scale(1.7);
+}
+.container{
+    /* background-color: aquamarine; */
+}

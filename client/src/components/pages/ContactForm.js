@@ -1,12 +1,13 @@
 import React,{useState} from "react";
 import  "../../styles/Contact.css";
-import Navbar from '../Navbar';
+import NavBarLoggedIn from '../NavBarLoggedIn';
+
 
 
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/d7d78ef0-9ede-11ed-82c7-3d7607318e65";
 
-const Contact = () => {
+const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
     setTimeout(() => {
@@ -26,7 +27,7 @@ const Contact = () => {
 
   return (
     <div>
-      <Navbar />
+      <NavBarLoggedIn />
     <form
       action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
@@ -60,4 +61,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

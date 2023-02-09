@@ -5,7 +5,7 @@
     align-items: center;
     height: 200px;
     font-size: 55px;
-    color: rgb(61, 65, 87);
+    color: rgb(0, 0, 0);
 }
 
 .P3{
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    color: rgb(61, 65, 87);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -27,23 +27,53 @@ input{
 button{
     padding:0.2rem;
     border-radius: 4px;
-}
-
-p1{
-    color: rgb(61, 65, 87);
-    font-size: 20px;
+    overflow:auto;
     position: relative;
-    top:-20px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.4);
+
+}  
+.text-left{
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 .thank {
-    color: rgb(61, 65, 87);
+    color: rgb(0, 0, 0);
     font-size: 50px;
     position: relative;
     top:100px;
 }
 .soon {
-    color: rgb(61, 65, 87);
+    color: rgb(0, 0, 0);
     font-size: 50px;
     position: relative;
     top:100px;
+}
+.bars{
+    overflow-y:auto;
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    left: 32em;
+    width: 80em;
+   
+}
+.bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:45px;
+   
+}
+.send{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:60px;
+
+}
+form{
+    overflow-y:auto;
 }

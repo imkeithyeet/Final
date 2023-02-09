@@ -1,17 +1,13 @@
 import React,{useState, useEffect} from 'react';
 import { Link } from "react-router-dom"
-import {MdFingerprint} from 'react-icons/md'
-import { FaBars, FaTimes} from 'react-icons/fa'
 import { Button } from './Button';
 import '../styles/Navbar.css'
-import { IconContext } from'react-icons/lib'
 
 function Navbar() {
 
     const [click, setClick]= useState(false)
     const[button, setButton] = useState(true)
 
-    const handleClick =()=> setClick(!click)
     const closeMobileMenu =()=> setClick(false)
     const showButton =()=> {
         if(window.innerWidth <= 960){
@@ -27,16 +23,12 @@ function Navbar() {
     window.addEventListener('resize', showButton)
     return (
         <div>
-            <IconContext.Provider value={{color:'#fff'}}>
             <div className="navbar">
                 <div className=".navbar-container.container ">
                     <Link  to ='/' className="navbar-logo" onClick={closeMobileMenu}>
-                        <MdFingerprint className="navbar-icon" /> 
-                        Us Dating
+                        <img src="../images/Logo.png" alt="logo" width={350} height={350}/>
+
                     </Link> 
-                    <div className="menu-icon " onClick={handleClick}>
-                        {click ? <FaTimes /> : <FaBars />}
-                        </div>
                         <ul className={click ? 'nav-menu active': 'nav-menu'}>
                             <li className="nav-item">
                                 <Link to='/' className="nav-links"onClick={closeMobileMenu}>
@@ -56,10 +48,10 @@ function Navbar() {
                             <li className="nav-btn">
                                 {button ? (
                                     <Link 
-                                    to='/sign-up'
+                                    to='/login'
                                      className="btn-link"
                                      >
-                                        <Button buttonStyle="btn--outline">LOGIN</
+                                        <Button buttonStyle="btn--outline">LOGIN/SIGN UP</
                                         Button>
                                     </Link>
                                 ): (
@@ -75,7 +67,6 @@ function Navbar() {
                         </ul>
                 </div>
             </div>
-            </IconContext.Provider>
         </div>
     );
 }

@@ -1,0 +1,58 @@
+
+
+.Img{
+    overflow:auto;
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    border-radius: 10px;
+    bottom: -3em;
+    right:28em;
+
+}
+.h{
+    overflow-x:auto;
+    position: relative;
+    display: inline-block;
+    top: 170px;
+    right: 10em;
+    font-size:55px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+
+}
+.H{
+    overflow-x:auto;
+    position: absolute;
+    display: inline-block;
+    font-size:55px;
+    right: 6em;
+    top: 23.5em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+.p1{
+    overflow-x:auto;
+    position: relative;
+    display: inline-block;
+    font-size:37px;
+    color: rgb(0, 0, 0);
+    font-weight: regular;
+    font-family: "Times New Roman", Times, serif;
+    left: 25.6em;
+    bottom: 10em;
+
+}
+.H5{
+    overflow:auto;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    font-size:65px;
+    top: -0.1em;
+    right: -14.6em;
+    font-family: "Times New Roman", Times, serif;
+
+}
