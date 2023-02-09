@@ -6,6 +6,7 @@ import DateCards from './DateCards';
 
 
 
+
 const Dashboard = ({user,setUser}) => {
   if (user === null) {
     return <Navigate to="/login"/>;
@@ -16,7 +17,7 @@ const Dashboard = ({user,setUser}) => {
   return (
     <div>
       <NavBarLoggedIn setUser={setUser} />
-      <DateCards />      
+      <DateCards />
     </div>
   );
 };

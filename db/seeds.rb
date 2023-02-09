@@ -33,8 +33,8 @@ m5 = Match.create(user_1_id: u3.id, user_2_id: u4.id, is_match: true)
 
 puts "Seeding photos..."
 p1 = Photo.create(image_url: 'https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/2022/02/11/ade01cd6-4d97-4f76-a9cb-22020e2d1c76_a21ac38f.jpg?itok=Fb3hVG0n', image_url2:"https://nypost.com/wp-content/uploads/sites/2/2022/02/beverly-zhu-04.jpg?quality=90&strip=all", user:u1 )
-p2 = Photo.create(image_url: 'https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/311277207_6469315576415453_9136998682385603383_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=t2X9LdsQ4LgAX8AQl4g&tn=V18h6iVdFoc98ezc&_nc_ht=scontent-lax3-2.xx&oh=00_AfA9jBIAXTZcTAyqLAB6KQfbb-qszw9FDzW2ZwzITCj1VA&oe=63E01F85',
-image_url2:"https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/261358684_5439077109439310_5841458662666541190_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_ohc=CNZYzt8fl8MAX9lBOj7&_nc_ht=scontent-lax3-1.xx&oh=00_AfC4iIETheqMpD8T3DVW411GDvfZQr6PHBFFEr6ghnoHLQ&oe=63DF3BD1", user:u2 )
+p2 = Photo.create(image_url: 'https://media.licdn.com/dms/image/C5603AQFYyYE9aptBIQ/profile-displayphoto-shrink_800_800/0/1588727965286?e=1680739200&v=beta&t=gVp3WplPvscIedt1AobWydmYGwfzRLySOOI8vyVCblg',
+image_url2:"https://p16.tiktokcdn-us.com/tos-useast5-avt-0068-tx/cd2347d527f370ed1f8b973446670ce8~c5_720x720.jpeg", user:u2 )
 p3 = Photo.create(image_url: 'https://img.jakpost.net/c/2020/04/11/2020_04_11_92465_1586599791._large.jpg', image_url2:"https://static.hiphopdx.com/2021/09/Rich-Brian-10M-Spotify_1280x720_09062021-1200x675.jpg", user:u3 )
 p4 = Photo.create(image_url: 'https://i.kym-cdn.com/entries/icons/original/000/031/397/dlephinearresttted.jpg', image_url2:"https://preview.redd.it/b8uc64b8ee791.jpg?width=640&crop=smart&auto=webp&s=c0c211b72739032eb31adfe7cf5dd16392aa5349", user:u4 )
 p5 = Photo.create(image_url: 'https://people.com/thmb/6VLsYmWN9hivx9nT2x6tmEVfPlg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/Sam-Smith-71-08092022-8eb0f75b82d14c829e4b9a75ce14b0b0.jpg', 

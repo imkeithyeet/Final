@@ -1,8 +1,12 @@
 import React,{Fragment,useState, useEffect} from 'react'
-import '../styles/DateCards.css';
+import  "../../styles/Profile.css";
 
 
-const DateCards = () => {
+import NavBarLoggedIn from '../NavBarLoggedIn';
+
+
+
+const Profile = () => {
 
     const [users, setUsers] = useState([])
     useEffect(() => {
@@ -14,11 +18,13 @@ const DateCards = () => {
   return (
     
     <Fragment>
-
-    <section className="property">
-
-    <div className="center">
-    <h3>Start Finding your Match</h3>
+        <NavBarLoggedIn />
+    <section className="center">
+    <div className="h4">
+    <h4>Picks ✴</h4>
+    </div>
+    <div className="p4">
+    <p4>Featured Profiles of the day, picked just for you!</p4>
     </div>
 
     <div className="row">
@@ -26,7 +32,7 @@ const DateCards = () => {
     {
         users.map((user)=>{
             return(
-                <div className="column">
+                <div className="cards">
           <div className="single-property">
             <div className="card">
 
@@ -67,4 +73,4 @@ const DateCards = () => {
   )
 }
 
-export default DateCards
+export default Profile

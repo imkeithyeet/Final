@@ -1,0 +1,31 @@
+.center h4{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   font-size: 49px;
+   font-weight: 550;
+   color: #001d38;
+   font-family: 'times new roman';
+   top:0.19em;
+}
+.cards{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    position: relative;
+    width:580px;
+    overflow-y: hidden;
+    
+
+    
+}
+.center p4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #001d38;
+    font-family: 'times new roman';
+    top:1.4em;
+ }

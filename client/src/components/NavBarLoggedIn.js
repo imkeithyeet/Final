@@ -14,8 +14,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import '../styles/NavBarLoggedIn.css'
 import { Link } from "react-router-dom"
+import Profile from './pages/Profile';
 
-const pages = [{text:'Profile(Spotlight)', url:"" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/Contact"}];
+
+const pages = [{text:'Profile(Spotlight)', url:"/Profile" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/Contact"}];
 // const settings = ['My Profile'];
 
 
@@ -120,7 +122,6 @@ function NavBarLoggedIn({setUser}) {
             </Button>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip  className="icon"title="Beverly Zhu">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

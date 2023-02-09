@@ -50,7 +50,8 @@
     padding-right: 1rem;
     display: flex;
     position: relative;
-    width:569px;
+    width:580px;
+    overflow-y: hidden;
 
 }
 .property-thumb{
