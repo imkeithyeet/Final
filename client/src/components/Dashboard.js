@@ -16,7 +16,7 @@ const Dashboard = ({user,setUser}) => {
  
   return (
     <div>
-      <NavBarLoggedIn setUser={setUser} />
+      <NavBarLoggedIn user={user} setUser={setUser} />
       <DateCards />
     </div>
   );

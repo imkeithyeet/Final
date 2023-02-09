@@ -19,11 +19,9 @@ import { Link } from "react-router-dom"
 const pages = [{text:'Profile(Spotlight)', url:"/Profile" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/ContactForm"}];
 // const settings = ['My Profile'];
 
-
-function NavBarLoggedIn({setUser}) {
+function NavBarLoggedIn({setUser, user}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-
   const navigate = useNavigate();
 
   function handleLogoutClick() {
@@ -116,15 +114,15 @@ function NavBarLoggedIn({setUser}) {
           </Box>
           <Box className="links" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button component={Link} to={page.url} variant="contained" color="primary">
+              <Button key={page.text} component={Link} to={page.url} variant="contained" color="primary">
               {page.text}
             </Button>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip  className="icon"title="Beverly Zhu">
+            <Tooltip  className="icon"title={user?.first_name} >
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Beverly Zhu" src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/2022/02/11/ade01cd6-4d97-4f76-a9cb-22020e2d1c76_a21ac38f.jpg?itok=Fb3hVG0n" />
+                <Avatar alt={user?.first_name} src={user?.photos ? user.photos[0].image_url : null} />
               </IconButton>
             </Tooltip>
             <Menu

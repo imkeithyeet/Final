@@ -4,7 +4,7 @@ import NavBarLoggedIn from '../NavBarLoggedIn';
 
 
 
-const Profile = () => {
+const Profile = ({user,setUser}) => {
 
     const [users, setUsers] = useState([])
     useEffect(() => {
@@ -16,7 +16,7 @@ const Profile = () => {
   return (
     
     <Fragment>
-        <NavBarLoggedIn />
+        <NavBarLoggedIn user={user} setUser={setUser} />
     <section className="center">
     <div className="h4">
     <h4>Picks ✴</h4>
