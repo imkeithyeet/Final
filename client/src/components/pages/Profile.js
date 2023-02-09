@@ -3,7 +3,6 @@ import  "../../styles/Profile.css";
 import NavBarLoggedIn from '../NavBarLoggedIn';
 
 
-
 const Profile = ({user,setUser}) => {
 
     const [users, setUsers] = useState([])
@@ -13,6 +12,21 @@ const Profile = ({user,setUser}) => {
           .then(setUsers);
       }, []);
     
+    const filteredUsers = users.filter(user => user.id !== 2 && user.id !== 3 && user.id !== 6 && user.id !== 7 && user.id !== 10);
+    const [randomUserList, setRandomUserList] = useState([]);
+
+    useEffect(() => {
+        if (filteredUsers.length) {
+            let list = [];
+            for (let i = 0; i < 5; i++) {
+                let randomIndex = Math.floor(Math.random() * filteredUsers.length);
+                list.push(filteredUsers[randomIndex]);
+                filteredUsers.splice(randomIndex, 1);
+            }
+            setRandomUserList(list);
+        }
+    }, [users]);
+
   return (
     
     <Fragment>
@@ -28,37 +42,34 @@ const Profile = ({user,setUser}) => {
     <div className="row">
 
     {
-        users
-        .filter(user => user.id === 2 || user.id === 3 || user.id === 6 || user.id === 7 || user.id === 10)
-        .map((user)=>{
-            return(
+        randomUserList.map((user) => {
+            return (
                 <div className="column">
-          <div className="single">
-            <div className="card">
-
-                <div className="picture">
-                    <img src={user.photos[0].image_url} alt="image" />
-                    <img src={user.photos[0].image_url2} alt="image" />
-                    <img src={user.photos[0].image_url3} />
-                </div>
-                    <wrapper className="captions">
-                <div className="name">
-                    <h1>{user.first_name} {user.last_name}</h1>          
-                    <div className="mark">
-                      <i class="fa-solid fa-location-dot"></i>
-                       <p1>{user.gender}</p1>
-                    </div>
-                    <p1>{user.age}</p1>
-                    <p>📍 {user.location}</p> 
-                    <p>	🔮 {user.horoscope}</p> 
-                </div>
-                </wrapper>
-                <div className="property-content">
-                    <div className="mark">
-                      <i class="fa-solid fa-location-dot"></i>
-                       <h3 className="h3"> 💼 {user.occupation}</h3>
-                       <h3 className="h3">🏫 {user.school}</h3>
-                    </div>
+                    <div className="single">
+                        <div className="card">
+                            <div className="picture">
+                                <img src={user.photos[0].image_url} alt="pic" />
+                                <img src={user.photos[0].image_url2} alt="pic" />
+                                <img src={user.photos[0].image_url3} alt="pic"/>
+                            </div>
+                            <wrapper className="captions">
+                                <div className="name">
+                                    <h1>{user.first_name} {user.last_name}</h1>          
+                                    <div className="mark">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p1>{user.gender}</p1>
+                                    </div>
+                                    <p1>{user.age}</p1>
+                                    <p>📍 {user.location}</p> 
+                                    <p>🔮 {user.horoscope}</p> 
+                                </div>
+                            </wrapper>
+                            <div className="property-content">
+                                <div className="mark">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <h3 className="h3"> 💼 {user.occupation}</h3>
+                                    <h3 className="h3">🏫 {user.school}</h3>
+                                </div>
                     <h3 className="h3">✍️ {user.bio}</h3>
                 </div>
                 
