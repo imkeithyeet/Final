@@ -22,6 +22,9 @@
     right: 20px;
     transform: scale(1.7);
 }
+.icon .MuiIconButton-root:hover {
+    transform: scale(1.9);
+  }
 .container{
     /* background-color: aquamarine; */
 }

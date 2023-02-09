@@ -2,7 +2,7 @@ import React,{Fragment,useState, useEffect} from 'react'
 import '../styles/DateCards.css';
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import NotInterestedOutlinedIcon from '@mui/icons-material/NotInterestedOutlined';
-// import { IconButton } from '@material-ui/core';
+import IconButton from '@mui/material/IconButton';
 
 
 const DateCards = () => {
@@ -17,7 +17,6 @@ const DateCards = () => {
   return (
     
     <Fragment>
-
     <section className="property">
     <div className="center">
     <h3>Start Finding your Match</h3>
@@ -33,9 +32,9 @@ const DateCards = () => {
           <div className="single-property">
             <div className="card">
                 <div className="picture">
-                    <img src={user.photos[0].image_url} alt="image" />
-                    <img src={user.photos[0].image_url2} alt="image" />
-                    <img src={user.photos[0].image_url3}/>
+                    <img src={user.photos[0].image_url} alt="pic" />
+                    <img src={user.photos[0].image_url2} alt="pic" />
+                    <img src={user.photos[0].image_url3} alt="pic"/>
                 </div>
                     <div className="captions">
                 <div className="name">
@@ -58,12 +57,12 @@ const DateCards = () => {
                     <h3 className="h3">✍️ {user.bio}</h3>
                 </div>
                 <div className="heart">
-  {/* <IconButton> */}
+  <IconButton>
     <NotInterestedOutlinedIcon />
-  {/* </IconButton> */}
-  {/* <IconButton> */}
+  </IconButton>
+  <IconButton>
     <FavoriteOutlinedIcon />
-  {/* </IconButton> */}
+  </IconButton>
 </div>
             </div>
           </div>

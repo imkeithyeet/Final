@@ -9,7 +9,6 @@ import About from './pages/About';
 import Dashboard from './Dashboard';
 import Profile from './pages/Profile';
 import ContactForm from './pages/ContactForm';
-import NavBarLoggedIn from './NavBarLoggedIn';
 
 
 function App() {
@@ -37,7 +36,6 @@ function App() {
         <Route path="/Dashboard" element={<Dashboard user={user} setUser={setUser}/>} />
         <Route path="/Profile" element={<Profile user={user} setUser={setUser}/>} />
         <Route path="/ContactForm" element={<ContactForm user={user} setUser={setUser}/>} />
-       
       </Routes>
       <Footer />
     </Router>
