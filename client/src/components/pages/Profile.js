@@ -1,7 +1,5 @@
 import React,{Fragment,useState, useEffect} from 'react'
 import  "../../styles/Profile.css";
-
-
 import NavBarLoggedIn from '../NavBarLoggedIn';
 
 
@@ -32,8 +30,8 @@ const Profile = () => {
     {
         users.map((user)=>{
             return(
-                <div className="cards">
-          <div className="single-property">
+                <div className="column">
+          <div className="single">
             <div className="card">
 
                 <div className="picture">

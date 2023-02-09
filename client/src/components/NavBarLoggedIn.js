@@ -14,10 +14,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import '../styles/NavBarLoggedIn.css'
 import { Link } from "react-router-dom"
-import Profile from './pages/Profile';
+ 
 
-
-const pages = [{text:'Profile(Spotlight)', url:"/Profile" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/Contact"}];
+const pages = [{text:'Profile(Spotlight)', url:"/Profile" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/ContactForm"}];
 // const settings = ['My Profile'];
 
 

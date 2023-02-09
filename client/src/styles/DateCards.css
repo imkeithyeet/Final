@@ -5,10 +5,14 @@
     place-items: center;
 }
 .center h3{
-    font-size: 42px;
-    font-weight: 500;
-    color: #001d38;
-    font-family: 'Nuosu SIL', serif;
+    position: relative;
+   display: flex;
+   justify-content: center;
+   font-size: 49px;
+   font-weight: 550;
+   color: #001d38;
+   font-family: 'times new roman';
+   top:0.19em;
 }
 .row{
     padding-top: 4rem;

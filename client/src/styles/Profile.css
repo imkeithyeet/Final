@@ -12,10 +12,11 @@
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
-    position: relative;
-    width:580px;
+    position: sticky;
+    width:600px;
     overflow-y: hidden;
-    
+
+
 
     
 }
@@ -29,3 +30,21 @@
     font-family: 'times new roman';
     top:1.4em;
  }
+ .single{
+    width: 590px;
+    border-radius: 1rem;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin-left: 10px;
+    box-shadow: 2px 2px 3px 3px rgb(173, 171, 171);
+    transition: background-color 1s ease-out 0.1ms;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    
+
+}
+.single:hover{
+    background-color: #e1dfdf;
+
+}

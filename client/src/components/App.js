@@ -8,6 +8,8 @@ import Login from './Login';
 import About from './pages/About';
 import Dashboard from './Dashboard';
 import Profile from './pages/Profile';
+import ContactForm from './pages/ContactForm';
+
 
 function App() {
   const [user, setUser] = useState();
@@ -33,7 +35,7 @@ function App() {
         <Route path="/login" element={<Login user={user} setUser={setUser} />} />
         <Route path="/Dashboard" element={<Dashboard user={user} setUser={setUser}/>} />
         <Route path="/Profile" element={<Profile user={user} setUser={setUser}/>} />
-
+        <Route path="/ContactForm" element={<ContactForm user={user} setUser={setUser}/>} />
       </Routes>
       <Footer />
     </Router>
