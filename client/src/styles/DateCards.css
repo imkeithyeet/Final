@@ -25,6 +25,8 @@
     height: 400px;
     max-height: 500px;
     overflow-y: scroll;
+    overflow-x: scroll;
+
 }
 .single-property:hover{
     background-color: #e1dfdf;
@@ -39,14 +41,16 @@
     position: relative;
     display:flex;
     justify-content: left;
-    margin-top: 30px;
+    margin-top: 15px;
+    left: 2em;
+
 }
 .column{
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
     position: relative;
-    width:550px;
+    width:569px;
 
 }
 .property-thumb{

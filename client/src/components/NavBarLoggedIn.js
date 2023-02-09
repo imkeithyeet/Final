@@ -15,8 +15,8 @@ import MenuItem from '@mui/material/MenuItem';
 import '../styles/NavBarLoggedIn.css'
 import { Link } from "react-router-dom"
 
-const pages = ['Profile(Spotlight)', 'Matches', 'Contact Us'];
-const settings = ['My Profile'];
+const pages = [{text:'Profile(Spotlight)', url:"" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/Contact"}];
+// const settings = ['My Profile'];
 
 
 function NavBarLoggedIn({setUser}) {
@@ -106,27 +106,23 @@ function NavBarLoggedIn({setUser}) {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map(({text}) => (
+                <MenuItem key={text} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{text}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Box className="links" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', position: 'relative'  }}
-              >
-                {page}
-              </Button>
+              <Button component={Link} to={page.url} variant="contained" color="primary">
+              {page.text}
+            </Button>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip  className="icon"title="Open Profile">
+            <Tooltip  className="icon"title="Beverly Zhu">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Beverly Zhu" src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/2022/02/11/ade01cd6-4d97-4f76-a9cb-22020e2d1c76_a21ac38f.jpg?itok=Fb3hVG0n" />
               </IconButton>
@@ -147,16 +143,10 @@ function NavBarLoggedIn({setUser}) {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem  key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+               <MenuItem onClick={handleCloseUserMenu}> My Profile
                 </MenuItem>
-              ))}
              <MenuItem onClick={handleLogoutClick}> Logout
                 </MenuItem>
-              {/* <Button variant="outline"  onClick={handleLogoutClick}>
-              Logout
-            </Button> */}
             </Menu>
           </Box>
         </Toolbar>

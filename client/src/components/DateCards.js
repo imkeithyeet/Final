@@ -42,17 +42,17 @@ const Property = () => {
                        <p1>{user.gender}</p1>
                     </div>
                     <p1>{user.age}</p1>
-                    <p>{user.location}</p> 
-                    <p>{user.horoscope}</p> 
+                    <p>📍 {user.location}</p> 
+                    <p>	🔮 {user.horoscope}</p> 
                 </div>
                 </wrapper>
                 <div className="property-content">
                     <div className="mark">
                       <i class="fa-solid fa-location-dot"></i>
-                       <h3 className="h3">{user.occupation}</h3>
-                       <h3 className="h3">{user.school}</h3>
+                       <h3 className="h3"> 💼 {user.occupation}</h3>
+                       <h3 className="h3">🏫 {user.school}</h3>
                     </div>
-                    <h3 className="h3">{user.bio}</h3>
+                    <h3 className="h3">✍️ {user.bio}</h3>
                 </div>
                 
             </div>
