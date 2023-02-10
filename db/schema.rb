@@ -17,10 +17,11 @@ ActiveRecord::Schema.define(version: 2023_02_09_063952) do
 
   create_table "matches", force: :cascade do |t|
     t.boolean "is_match"
-    t.integer "user_1_id", null: false
-    t.integer "user_2_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "liked_user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id", "liked_user_id"], name: "index_matches_on_user_id_and_liked_user_id", unique: true
   end
 
   create_table "messages", force: :cascade do |t|
@@ -57,5 +58,7 @@ ActiveRecord::Schema.define(version: 2023_02_09_063952) do
     t.string "school"
   end
 
+  add_foreign_key "matches", "users"
+  add_foreign_key "matches", "users", column: "liked_user_id"
   add_foreign_key "photos", "users"
 end

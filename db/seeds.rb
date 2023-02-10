@@ -1,9 +1,9 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 
-
-User.destroy_all
 Match.destroy_all
+User.destroy_all
+
 Photo.destroy_all
 Message.destroy_all
 
@@ -22,14 +22,14 @@ u10 = User.create(first_name:"Colton",last_name:"Haynes", email: 'speedy@gmail.c
 
 
 puts "Seeding matches..."
-m1 = Match.create(user_1_id: u1.id, user_2_id: u2.id, is_match: true)
-m2 = Match.create(user_1_id: u4.id, user_2_id: u6.id, is_match: false)
-m3 = Match.create(user_1_id: u5.id, user_2_id: u7.id, is_match: true)
-m4 = Match.create(user_1_id: u6, user_2_id: u8.id, is_match: true)
-m5 = Match.create(user_1_id: u1.id, user_2_id: u7.id, is_match: false)
-m5 = Match.create(user_1_id: u3.id, user_2_id: u4.id, is_match: true)
-m6 = Match.create(user_1_id: u5.id, user_2_id: u10.id, is_match: true)
-m7 = Match.create(user_1_id: u8.id, user_2_id: u9.id, is_match: true)
+m1 = Match.create(user_id: u1.id, liked_user_id: u2.id, is_match: true)
+m2 = Match.create(user_id: u4.id, liked_user_id: u6.id, is_match: false)
+m3 = Match.create(user_id: u5.id, liked_user_id: u7.id, is_match: true)
+m4 = Match.create(user_id: u6, liked_user_id: u8.id, is_match: true)
+m5 = Match.create(user_id: u1.id, liked_user_id: u7.id, is_match: false)
+m5 = Match.create(user_id: u3.id, liked_user_id: u4.id, is_match: true)
+m6 = Match.create(user_id: u5.id, liked_user_id: u10.id, is_match: true)
+m7 = Match.create(user_id: u8.id, liked_user_id: u9.id, is_match: true)
 
 
 

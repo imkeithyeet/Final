@@ -16,10 +16,22 @@ const DateCards = () => {
   }, []);
 
   const handleLike = (user) => {
+    fetch("/matches", {
+      method: "POST",
+      headers: { "Content-Type": "application/json"},
+      body: JSON.stringify({liked_user_id: user.id, is_match: true })
+    })
+    setUsers(users.filter((u) => u.id !== user.id))
     setMatches([...matches, user]);
   };
   
   const handleDislike = (user) => {
+    fetch("/matches", {
+      method: "POST",
+      headers: { "Content-Type": "application/json"},
+      body: JSON.stringify({liked_user_id: user.id, is_match: false})
+    })
+    setUsers(users.filter((u) => u.id !== user.id))
     setMatches(matches.filter((u) => u.id !== user.id));
   };
 

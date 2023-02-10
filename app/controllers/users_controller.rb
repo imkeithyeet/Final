@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
-    def index 
-        user = User.all 
-        render json: user, status: :ok
+    def index
+        authorize
+        users = @current_user.possible_matches
+        render json: users, status: :ok
     end
     def show
         user = find_user

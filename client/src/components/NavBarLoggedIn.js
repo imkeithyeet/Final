@@ -55,7 +55,7 @@ function NavBarLoggedIn({setUser, user}) {
     
     <AppBar position="static">
      
-   <Container className="container" maxWidth="xl" style={{height: '140px'}}>
+   <Container className="container" maxWidth="xl" style={{height: '140px', background: '#2E3B55' }}>
         <Toolbar disableGutters>
         <Link  to ='/Dashboard' className="logo" onClick={handleCloseUserMenu}>
                         <img src="../images/Logo.png" alt="logo" />
