@@ -17,7 +17,7 @@ import { Link } from "react-router-dom"
 
  
 
-const pages = [{text:'Profile(Spotlight)', url:"/Profile" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/ContactForm"}];
+const pages = [{text:'Profile(Spotlight)', url:"/Profile" }, {text: 'Matches', url: "/Matches"}, {text:'Contact Us', url: "/ContactForm"}];
 
 function NavBarLoggedIn({setUser, user}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
