@@ -56,14 +56,19 @@ const DateCards = () => {
                     </div>
                     <h3 className="h3">✍️ {user.bio}</h3>
                 </div>
-                <div className="heart">
-  <IconButton>
-    <NotInterestedOutlinedIcon />
-  </IconButton>
-  <IconButton>
-    <FavoriteOutlinedIcon />
-  </IconButton>
+               <div className="heart">
+  <div className="icon-container">
+    <IconButton >
+      <NotInterestedOutlinedIcon />
+    </IconButton>
+  </div>
+  <div className="icon-container">
+    <IconButton >
+      <FavoriteOutlinedIcon />
+    </IconButton>
+  </div>
 </div>
+
             </div>
           </div>
         </div>

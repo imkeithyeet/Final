@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -14,6 +14,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import '../styles/NavBarLoggedIn.css'
 import { Link } from "react-router-dom"
+
  
 
 const pages = [{text:'Profile(Spotlight)', url:"/Profile" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/ContactForm"}];
@@ -23,6 +24,7 @@ function NavBarLoggedIn({setUser, user}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const navigate = useNavigate();
+
 
   function handleLogoutClick() {
     
@@ -51,13 +53,16 @@ function NavBarLoggedIn({setUser, user}) {
     setAnchorElUser(null);
   };
   return (
+    
     <AppBar position="static">
+     
    <Container className="container" maxWidth="xl" style={{height: '140px'}}>
         <Toolbar disableGutters>
         <Link  to ='/Dashboard' className="logo" onClick={handleCloseUserMenu}>
                         <img src="../images/Logo.png" alt="logo" />
 
                     </Link> 
+                    
           {/* <Typography
             variant="h6"
             noWrap
@@ -75,7 +80,7 @@ function NavBarLoggedIn({setUser, user}) {
             }}
           >
           </Typography> */}
-
+         
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
