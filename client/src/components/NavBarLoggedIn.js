@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -18,7 +18,6 @@ import { Link } from "react-router-dom"
  
 
 const pages = [{text:'Profile(Spotlight)', url:"/Profile" }, {text: 'Matches', url: ""}, {text:'Contact Us', url: "/ContactForm"}];
-// const settings = ['My Profile'];
 
 function NavBarLoggedIn({setUser, user}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -146,8 +145,6 @@ function NavBarLoggedIn({setUser, user}) {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-               <MenuItem onClick={handleCloseUserMenu}> My Profile
-                </MenuItem>
              <MenuItem onClick={handleLogoutClick}> Logout
                 </MenuItem>
             </Menu>

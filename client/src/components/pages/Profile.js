@@ -12,7 +12,7 @@ const Profile = ({user,setUser}) => {
           .then(setUsers);
       }, []);
     
-    const filteredUsers = users.filter(user => user.id !== 2 && user.id !== 3 && user.id !== 6 && user.id !== 7 && user.id !== 10);
+    const filteredUsers = users.filter(user => user.id !== 2  && user.id !== 6 && user.id !== 7 && user.id !== 10);
     const [randomUserList, setRandomUserList] = useState([]);
 
     useEffect(() => {
