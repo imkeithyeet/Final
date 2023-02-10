@@ -25,7 +25,7 @@ const DateCards = () => {
     <div className="row">
     {
         users.map((user)=>{
-            if (user.id === 2 | user.id === 3 || user.id === 4  || user.id === 5 || user.id === 6  || user.id === 7 || user.id === 8 || user.id === 9 || user.id === 10) {
+            if (user.id === 1 | user.id === 3 || user.id === 4  || user.id === 5 || user.id === 6  || user.id === 7 || user.id === 8 || user.id === 9 || user.id === 10) {
             return(
                 
                 <div key={`card_user_${user.id}`}className="column">

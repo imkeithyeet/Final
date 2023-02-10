@@ -18,11 +18,16 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 1px;
+  padding: 2px;
   margin: 2 8px ;
 }
 .heart .MuiIconButton-root:hover {
     transform: scale(1.3);
+    color: rgb(0, 0, 0);
+    --_c: var(--c);
+    --_p: 100%;
+    transition: 0.1s, color 0s .1s, background-color 0s .5s;
+    
   }
 .row{
     padding-top: 4rem;

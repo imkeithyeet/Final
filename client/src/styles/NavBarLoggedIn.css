@@ -14,6 +14,14 @@
     justify-content: right;
 
 }
+.links:hover{
+    transform: scale(1.05);
+
+    --_c: var(--c);
+    --_p: 100%;
+    transition: 0.1s, color 0s .1s, background-color 0s .5s;
+    
+}
 
 .icon{
     position: relative;
@@ -23,7 +31,8 @@
     transform: scale(1.7);
 }
 .icon .MuiIconButton-root:hover {
-    transform: scale(1.9);
+    color: #fff;
+  
   }
 .container{
     /* background-color: aquamarine; */
