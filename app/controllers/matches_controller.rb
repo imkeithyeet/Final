@@ -1,4 +1,11 @@
 class MatchesController < ApplicationController
+
+
+  def index
+    matches = Match.all
+    render json: matches
+  end
+
     def create
         authorize
       @match = @current_user.matches.new(match_params)
@@ -10,7 +17,6 @@ class MatchesController < ApplicationController
       end
 
       private
-    
       def match_params
         params.permit(:liked_user_id, :is_match)
       end

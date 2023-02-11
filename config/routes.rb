@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  resources :matches, only: [:create]
+  resources :matches, only: [:create, :index]
   resources :messages
   resources :photos
   resources :users, only: [:index, :show, :create]
