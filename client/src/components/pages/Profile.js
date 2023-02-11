@@ -35,8 +35,8 @@ const Profile = ({user,setUser}) => {
     <div className="h4">
     <h4>Picks ✴</h4>
     </div>
-    <div className="p4">
-    <p4>Featured Profiles of the day, picked just for you!</p4>
+    <div className="features">
+    <p>Featured Profiles of the day, picked just for you!</p>
     </div>
 
     <div className="row">
@@ -44,7 +44,9 @@ const Profile = ({user,setUser}) => {
     {
         randomUserList.map((user) => {
             return (
-                <div className="column">
+                <div 
+                key={`card_user_${user.id}`}
+                className="column">
                     <div className="single">
                         <div className="card">
                             <div className="picture">
@@ -52,21 +54,21 @@ const Profile = ({user,setUser}) => {
                                 <img src={user.photos[0].image_url2} alt="pic" />
                                 <img src={user.photos[0].image_url3} alt="pic"/>
                             </div>
-                            <wrapper className="captions">
+                            <div className="captions">
                                 <div className="name">
                                     <h1>{user.first_name} {user.last_name}</h1>          
                                     <div className="mark">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <p1>{user.gender}</p1>
+                                        <i className="fa-solid fa-location-dot"></i>
+                                        <p>{user.gender}</p>
                                     </div>
-                                    <p1>{user.age}</p1>
+                                    <p>{user.age}</p>
                                     <p>📍 {user.location}</p> 
                                     <p>🔮 {user.horoscope}</p> 
                                 </div>
-                            </wrapper>
+                            </div>
                             <div className="property-content">
                                 <div className="mark">
-                                    <i class="fa-solid fa-location-dot"></i>
+                                    <i className="fa-solid fa-location-dot"></i>
                                     <h3 className="h3"> 💼 {user.occupation}</h3>
                                     <h3 className="h3">🏫 {user.school}</h3>
                                 </div>
