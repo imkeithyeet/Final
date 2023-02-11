@@ -38,16 +38,16 @@ const ContactForm = ({user,setUser}) => {
         <h1 className="H3">Contact Us</h1>
         </div>
         <div>
-        <p1 class="text-left">Send Us a Message Today:</p1>
+        <p className="text-left">Send Us a Message Today:</p>
         </div>
-        <wrapper className="bars">
+        <div className="bars">
       <div>
         <input type="text" placeholder="Your name" name="name" required />
       </div>
       <div>
         <input type="email" placeholder="Email" name="email" required />
       </div>
-      </wrapper>
+      </div>
       <div className="bar">
         <textarea placeholder="Your message" name="message" required />
       </div>
@@ -55,7 +55,7 @@ const ContactForm = ({user,setUser}) => {
         <button type="submit"> Send a message </button>
       </div>
       
-      <p3 className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p3>
+      <p className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p>
     </form>
     </div>
   );
