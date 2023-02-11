@@ -56,3 +56,10 @@
     font-family: "Times New Roman", Times, serif;
 
 }
+.contactDark{
+    position: fixed;
+    right: 90px;
+    bottom: 480px;
+    border-radius: 30px 30px 30px;
+    z-index: 999; 
+}
