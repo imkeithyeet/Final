@@ -18,6 +18,7 @@ const ContactForm = ({user,setUser}) => {
   if (submitted) {
     return (
       <>
+       <NavBarLoggedIn user={user} setUser={setUser} />
        <p1 className="text-center">✅</p1>
         <h2 className="thank">Thank you!</h2>
         <div className="soon">We'll be in touch soon.</div>

@@ -39,26 +39,38 @@ button{
     display: flex;
     justify-content: center;
 }
+.text-center{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:10em;
+
+}
 .thank {
     color: rgb(0, 0, 0);
     font-size: 50px;
     position: relative;
-    top:100px;
+    top:3em;
+    display: flex;
+    justify-content: center;
 }
 .soon {
     color: rgb(0, 0, 0);
     font-size: 50px;
     position: relative;
-    top:100px;
+    top:4em;
+    display: flex;
+    justify-content: center;
 }
 .bars{
     overflow-y:auto;
     position: relative;
     display: inline-block;
     top: 30px;
-    left: 32em;
+    left: 31em;
     width: 80em;
-   
+    overflow-x: hidden;
+
 }
 .bar{
     position: relative;

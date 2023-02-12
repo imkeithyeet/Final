@@ -33,7 +33,6 @@ const Dashboard = ({user,setUser}) => {
     <div>
       <NavBarLoggedIn user={user} setUser={setUser} />
       <button className="toggle" onClick={toggleTheme}>{theme === 'dark' ? '𖤓' : '☽'}</button>
-
       <DateCards />
     </div>
   );

@@ -14,6 +14,9 @@
     left: 179px;
     display: flex;
     top: -1em;
+    color:black;
+    background-color: #fff;
+
   }
   .heading.dark{
     max-width: 540px;
@@ -23,6 +26,9 @@
     left: 179px;
     top: 50px;
     display: flex;
+    color:black;
+    background-color: #fff;
+
   }
   .row {
     display: flex;
@@ -97,13 +103,15 @@
   }
   
   .home__hero-img {
-    max-width: 66%;
+    max-width: 69%;
     margin-left: 10px;
     padding-right: 0;
     border-radius: 15px;
     top: -7em;
     position: absolute;
     display: inline-block;
+   
+
   }
   
   img {

@@ -58,13 +58,7 @@
    top: 2em;
    right: 0.9em;
   }
-  .text-center{
-    position: relative;
-    display: flex;
-    left: 6.5em;
-    bottom: 0.4em;
-    
-  }
+
   .form-group.mt-3{
     position: relative;
     display: flex;
@@ -103,4 +97,9 @@
    justify-content: center;
    left: 1em;
   
+  }
+  .text-center{
+    position: relative;
+    display: flex;
+    top:-9px;
   }

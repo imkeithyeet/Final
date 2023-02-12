@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import '../styles/LoginForm.css'
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 
 
@@ -76,7 +77,7 @@ export default function LoginForm({ setUser, showLogin, setShowLogin}) {
           </button>
         </div>
         <p className="forgot">
-          Forgot <a className="p" href="#">Password?</a>
+          Forgot <Link to="/" className="p" >Password?</Link>
         </p>
         <div>
         {errors.map((err) => (

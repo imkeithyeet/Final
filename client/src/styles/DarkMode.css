@@ -13,6 +13,12 @@ color: #333;
     overflow-x: hidden;
     left: 2em;
     top: 20em;
+    width: 2.4em;
+    height: 2.4em;
 
+}
+.toggle:hover{
+    color: #1976d2;
+    background-color: rgb(182, 182, 182);
 
 }

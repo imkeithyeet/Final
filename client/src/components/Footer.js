@@ -42,7 +42,7 @@ function Footer() {
           </div>
           <div className='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
+            <Link to='/Contact'>Contact</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
@@ -57,7 +57,7 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
           <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
+            <Link to='/Dashboard' className='social-logo'>
             <img src="../images/Logo.png" alt="logo" width={190} height={210}/>
 
             </Link>
