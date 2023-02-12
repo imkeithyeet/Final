@@ -8,8 +8,7 @@ import IconButton from '@mui/material/IconButton';
 const DateCards = () => {
   const [users, setUsers] = useState([]);
   const [matches, setMatches] = useState([]);
-  
-
+ 
   useEffect(() => {
     fetch("/users")
       .then((r) => r.json())
@@ -25,6 +24,7 @@ const DateCards = () => {
     setUsers(users.filter((u) => u.id !== user.id))
     setMatches([...matches, user]);
   };
+
   
   const handleDislike = (user) => {
     fetch("/matches", {
