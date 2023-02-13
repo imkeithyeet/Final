@@ -3,20 +3,20 @@
 .Img{
     overflow:auto;
     position: relative;
-    display: inline-block;
-    width: 45%;
+    display: sticky;
+    width: 45.5%;
     border-radius: 10px;
-    bottom: -3em;
-    right:28em;
+    bottom: 1em;
+    right:-1em;
+    height: 58em;
 
 }
 .h{
     overflow-x:auto;
     position: relative;
     display: inline-block;
-    top: 170px;
-    right: 10em;
-    font-size:55px;
+    right: -2em;
+    font-size:53px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
@@ -25,10 +25,10 @@
 .H{
     overflow-x:auto;
     position: absolute;
-    display: inline-block;
-    font-size:55px;
+    display: sticky;
+    font-size:53px;
     right: 6em;
-    top: 23.5em;
+    top: 30em;
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
@@ -36,30 +36,23 @@
 .p1{
     overflow-x:auto;
     position: relative;
-    display: inline-block;
+    display: sticky;
     font-size:37px;
     color: rgb(0, 0, 0);
     font-weight: regular;
     font-family: "Times New Roman", Times, serif;
-    left: 25.6em;
-    bottom: 10em;
+    left: 25em;
+    bottom: 14em;
 
 }
 .H5{
     overflow:auto;
     position: relative;
-    display: inline-block;
+    display: sticky;
     position: relative;
     font-size:65px;
-    top: -0.1em;
+    top: 6em;
     right: -14.6em;
     font-family: "Times New Roman", Times, serif;
 
-}
-.contactDark{
-    position: fixed;
-    right: 90px;
-    bottom: 480px;
-    border-radius: 30px 30px 30px;
-    z-index: 999; 
 }

@@ -12,8 +12,8 @@
     padding-bottom: 60px;
     position: relative;
     left: 179px;
-    display: flex;
-    top: -1em;
+    display: sticky;
+    top: -6.7em;
     color:black;
     background-color: #fff;
 
@@ -24,8 +24,8 @@
     padding-bottom: 60px;
     position: relative;
     left: 179px;
-    top: 50px;
-    display: flex;
+    top: -2em;
+    display: sticky;
     color:black;
     background-color: #fff;
 
@@ -65,8 +65,9 @@
     text-transform: uppercase;
     margin-bottom: 16px;
     position: relative;
-    display: flex;
+    display: sticky;
     top: -7em;
+    left: -4em;
   }
   
   .heading {
@@ -76,8 +77,9 @@
     font-weight: 600;
     color: #f7f8fa;
     position: relative;
-    display: flex;
+    display: sticky;
     top: -2.2em;
+    left:-1.5em;
   }
   
   .dark {
@@ -94,8 +96,9 @@
     font-size: 18px;
     line-height: 24px;
     position: relative;
-    display: flex;
+    display: sticky;
     top: -5em;
+    left: -4em;
   }
   
   .home__hero-img-wrapper {
@@ -111,7 +114,7 @@
     height: 33em;
     left: 35em;
     position: absolute;
-    display: inline-block;
+    display: sticky;
 
    
 
@@ -122,7 +125,7 @@
     max-width: 101%;
     vertical-align: middle;
     display: inline-block;
-    position: relative;
+    position: sticky;
     display: flex;
   }
   
