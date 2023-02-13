@@ -61,25 +61,6 @@ function NavBarLoggedIn({setUser, user}) {
                         <img src="../images/Logo.png" alt="logo" />
 
                     </Link> 
-                    
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/Dashboard"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              fontSize: '14px',
-            }}
-          >
-          </Typography> */}
-         
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -145,7 +126,7 @@ function NavBarLoggedIn({setUser, user}) {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-             <MenuItem onClick={handleLogoutClick}> Logout
+             <MenuItem className="logout" onClick={handleLogoutClick}> Logout
                 </MenuItem>
             </Menu>
           </Box>

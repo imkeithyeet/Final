@@ -1,7 +1,6 @@
 class Match < ApplicationRecord
     belongs_to :user
     belongs_to :liked_user, class_name: "User"
-    has_many :notifications, as: :notifiable
 
     validate :unique_users
     private

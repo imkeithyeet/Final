@@ -34,4 +34,10 @@
     color: #fff;
   
   }
+.logout{
+    position: relative;
+    display: flex;
+    
+}
+
 
