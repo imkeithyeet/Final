@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import  "../../styles/Contact.css";
 import NavBarLoggedIn from '../NavBarLoggedIn';
+import Footer from '../Footer';
+
 
 
 
@@ -58,6 +60,7 @@ const ContactForm = ({user,setUser}) => {
       
       <p className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p>
     </form>
+    <Footer/>
     </div>
   );
 };

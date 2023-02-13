@@ -1,6 +1,8 @@
 import React,{Fragment,useState, useEffect} from 'react'
 import  "../../styles/Profile.css";
 import NavBarLoggedIn from '../NavBarLoggedIn';
+import Footer from '../Footer';
+
 
 
 const Profile = ({user,setUser}) => {
@@ -83,6 +85,7 @@ const Profile = ({user,setUser}) => {
     }     
     </div>
     </section>
+        <Footer/>
     </Fragment>
   )
 }

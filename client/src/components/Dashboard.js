@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import { Navigate } from 'react-router-dom'
 import NavBarLoggedIn from './NavBarLoggedIn';
+import Footer from "./Footer";
 
 import DateCards from './DateCards';
 import '../styles/DarkMode.css';
@@ -35,6 +36,7 @@ const Dashboard = ({user,setUser}) => {
       <NavBarLoggedIn user={user} setUser={setUser} />
       <button className="toggle" onClick={toggleTheme}>{theme === 'dark' ? '𖤓' : '☽'}</button>
       <DateCards />
+      <Footer />
     </div>
   );
 };

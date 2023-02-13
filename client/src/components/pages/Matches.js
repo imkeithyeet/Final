@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-
+import Footer from '../Footer';
 import NavBarLoggedIn from '../NavBarLoggedIn';
 import  "../../styles/Matches.css";
 
@@ -42,6 +42,7 @@ const Matches = ({user, setUser}) => {
             <p>No liked users found.</p>
           )}
         </ul>
+        <Footer/>
       </div>
     );
   };

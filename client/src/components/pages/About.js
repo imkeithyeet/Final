@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from '.././Navbar';
+import Footer from '.././Footer';
+
 
 import  "../../styles/About.css";
 
@@ -20,6 +22,7 @@ function About() {
                 <h1 className="h">We want anyone looking love</h1>
                 <h1 className="H">to be able to find it</h1>
             </div>
+            <Footer />
         </div>
     )
     }
