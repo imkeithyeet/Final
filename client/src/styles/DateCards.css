@@ -69,6 +69,12 @@
     left: 2em;
 
 }
+p{
+    color: #001d38;
+}
+h1{
+    color: #001d38;
+}
 .column{
     padding-left: 1rem;
     padding-right: 1rem;

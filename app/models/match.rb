@@ -9,5 +9,4 @@ class Match < ApplicationRecord
     def unique_users
       errors.add(:base, "user_1_id and user_2_id must be different") if user_id == liked_user_id
     end
-
 end
