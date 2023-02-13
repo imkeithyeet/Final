@@ -103,13 +103,16 @@
   }
   
   .home__hero-img {
-    max-width: 69%;
-    margin-left: 10px;
+    max-width: 70%;
+    margin-left:-13px;
     padding-right: 0;
     border-radius: 15px;
-    top: -7em;
+    top: -10em;
+    height: 33em;
+    left: 35em;
     position: absolute;
     display: inline-block;
+
    
 
   }
