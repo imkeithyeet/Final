@@ -3,7 +3,11 @@ class User < ApplicationRecord
     has_many :photos, dependent: :destroy
     has_many :matches
     has_many :liked_by_matches, class_name: "Match", foreign_key: :liked_user
-    has_many :liked_users, through: :matches
+    has_many :is_match_matches, -> {where(is_match: true)}, foreign_key: :user_id, class_name: "Match"
+    has_many :is_match_liked_by_matches, -> {where(is_match: true)}, class_name: "Match", foreign_key: :liked_user
+    has_many :is_match_liked_users, through: :is_match_matches, source: :liked_user
+    has_many :is_match_liked_by_users, through: :is_match_liked_by_matches, source: :user
+
     validates_presence_of :first_name, :last_name, :password,length: {in: 4..25}
 
 
@@ -12,8 +16,15 @@ class User < ApplicationRecord
 
 
     def possible_matches
-        User.all - liked_users - [self]
+        User.all - liked_by_matches - [self]
     end
+
+    def matched_users
+        is_match_liked_by_users & is_match_liked_users
+    end
+
+
+
 end
 
 

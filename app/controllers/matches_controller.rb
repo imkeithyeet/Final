@@ -10,8 +10,7 @@ class MatchesController < ApplicationController
     authorize
     @match = @current_user.matches.new(match_params)
     if @match.save
-      recipient = User.find(@match.liked_user_id)
-      Notification.create(recipient: recipient, actor: @current_user, action: "matched", notifiable: @match)
+      recipient = @match.liked_user
       render json: @match, status: :created
     else
       render json: @match.errors, status: :unprocessable_entity

@@ -7,3 +7,12 @@
     top: 1.3em;
     font-weight: bold;
 }
+.no{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    top: 5.5em;
+   
+}
