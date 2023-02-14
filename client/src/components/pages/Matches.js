@@ -17,7 +17,7 @@ const Matches = ({user, setUser}) => {
         <ul className="matches-list">
           {matches?.length > 0 ? (
             matches.map((match) => (
-              <li key={match.id} >
+              <div key={match.id} >
                 {match.first_name}
                 {match.last_name}
                 {match.school}
@@ -27,8 +27,12 @@ const Matches = ({user, setUser}) => {
                 {match.location}
                 {match.bio}
                 {match.horoscope}
-                {match.photos}
-              </li>
+                <div className="pic">
+                <img src={match.photos[0].image_url} alt="pic" />
+                   <img src={match.photos[0].image_url2} alt="pic" />
+                 <img src={match.photos[0].image_url3} alt="pic" />
+                 </div>
+              </div>
             ))
           ) : (
             <p className="no">No Matches Found.</p>

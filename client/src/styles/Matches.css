@@ -16,3 +16,14 @@
     top: 5.5em;
    
 }
+.pic{
+    height:25em;
+    width: 30em;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    border-radius:100px;
+    top: 10em;
+    left: 10em;
+    
+}
