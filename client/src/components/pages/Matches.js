@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 import Footer from '../Footer';
 import NavBarLoggedIn from '../NavBarLoggedIn';
 import  "../../styles/Matches.css";
@@ -9,20 +9,14 @@ const Matches = ({user, setUser}) => {
     const { matches = [], liked_users = [] } = user || {};
     const [users, setUsers] = useState([]);
   
-    useEffect(() => {
-      fetch("/users")
-        .then((r) => r.json())
-        .then(setUsers);
-    }, []);
-  
     return (
       <div>
         <NavBarLoggedIn user={user} setUser={setUser} />
-        <h className="Matches">Matches</h>
+        <div className="Matches">Matches</div>
         <ul className="matches-list">
           {matches.length > 0 ? (
-            matches.map((match, index) => (
-              <li key={index} className="match">
+            matches.map((match) => (
+              <li key={match.user} >
                 {match.name}
               </li>
             ))
@@ -30,11 +24,11 @@ const Matches = ({user, setUser}) => {
             <p>No matches found.</p>
           )}
         </ul>
-        <h className="LikedUsers">Liked Users</h>
+        <div className="LikedUsers">Liked Users</div>
         <ul className="liked-users-list">
           {liked_users.length > 0 ? (
             liked_users.map((liked_user, index) => (
-              <li key={index} className="liked-user">
+              <li key={index} >
                 {liked_user.name}
               </li>
             ))
