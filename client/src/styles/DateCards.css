@@ -43,8 +43,10 @@
     width: 610px;
     border-radius: 1rem;
     margin-bottom: 30px;
+    margin-top: 4px;
+
     overflow: hidden;
-    box-shadow: 2px 2px 3px 3px rgb(173, 171, 171);
+    box-shadow: 2px 1px 3px 3px rgb(173, 171, 171);
     transition: background-color 1s ease-out 0.1ms;
     height: 400px;
     max-height: 500px;
@@ -53,7 +55,7 @@
 
 }
 .single-property:hover{
-    background-color: #ffffff;
+    background-color: #e0dddd;
 
 }
 .captions{

@@ -23,6 +23,7 @@
     width: 590px;
     border-radius: 1rem;
     margin-bottom: 30px;
+    margin-top: 10px;
     overflow: hidden;
     margin-left: 10px;
     box-shadow: 2px 2px 3px 3px rgb(173, 171, 171);
@@ -33,6 +34,6 @@
     
 }
 .single:hover{
-    background-color: #ffffff;
+    background-color: #e0dddd;
 
 }
