@@ -16,7 +16,7 @@ class User < ApplicationRecord
 
 
     def possible_matches
-        User.all - liked_by_matches - [self]
+        User.all - matches - [self]
     end
 
     def matched_users

@@ -2,10 +2,29 @@ import React,{Fragment,useState, useEffect} from 'react'
 import  "../../styles/Profile.css";
 import NavBarLoggedIn from '../NavBarLoggedIn';
 import Footer from '../Footer';
+import  "../../styles/DarkMode.css";
+
 
 
 
 const Profile = ({user,setUser}) => {
+     const [theme, setTheme] = useState(   
+     localStorage.getItem('theme') || 'light'
+  );
+  const toggleTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
+
+    } else {
+      setTheme('dark');
+      localStorage.setItem('theme', 'dark');
+
+    }
+  };
+   useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
     const [users, setUsers] = useState([])
     useEffect(() => {
@@ -85,6 +104,8 @@ const Profile = ({user,setUser}) => {
     }     
     </div>
     </section>
+    <button className="toggle" onClick={toggleTheme}>{theme === 'dark' ? '𖤓' : '☽'}</button>
+
         <Footer/>
     </Fragment>
   )

@@ -1,7 +1,8 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import  "../../styles/Contact.css";
 import NavBarLoggedIn from '../NavBarLoggedIn';
 import Footer from '../Footer';
+import  "../../styles/DarkMode.css";
 
 
 
@@ -11,6 +12,24 @@ const FORM_ENDPOINT = "https://public.herotofu.com/v1/d7d78ef0-9ede-11ed-82c7-3d
 
 const ContactForm = ({user,setUser}) => {
   const [submitted, setSubmitted] = useState(false);
+   const [theme, setTheme] = useState(   
+     localStorage.getItem('theme') || 'light'
+  );
+  const toggleTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
+
+    } else {
+      setTheme('dark');
+      localStorage.setItem('theme', 'dark');
+
+    }
+  };
+   useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   const handleSubmit = () => {
     setTimeout(() => {
       setSubmitted(true);
@@ -60,6 +79,8 @@ const ContactForm = ({user,setUser}) => {
       
       <p className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p>
     </form>
+          <button className="toggle" onClick={toggleTheme}>{theme === 'dark' ? '𖤓' : '☽'}</button>
+
     <Footer/>
     </div>
   );

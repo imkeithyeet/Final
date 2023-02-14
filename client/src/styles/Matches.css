@@ -16,14 +16,42 @@
     top: 5.5em;
    
 }
-.pic{
-    height:25em;
-    width: 30em;
+
+.box{
+    width: 610px;
+    border-radius: 1rem;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px 3px rgb(173, 171, 171);
+    transition: background-color 1s ease-out 0.1ms;
+    height: 400px;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    position: relative;
+    display:flex ;
+    /* background-color: rgb(186, 184, 184); */
+
+}
+
+.box:hover{
+    background-color: #ffffff;
+
+}
+.matches-list{
+    position: relative;
+    display: flex;
+   justify-content: center;
+   top: 12em;
+}
+.Images img{
+    float: left;
+    width:  280px;
+    height:23em;
     object-fit: cover;
     position: relative;
     display: flex;
-    border-radius:100px;
-    top: 10em;
-    left: 10em;
+    border-radius:10px;
+    top: -1.67em;
     
 }
