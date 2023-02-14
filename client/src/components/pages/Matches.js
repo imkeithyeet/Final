@@ -36,7 +36,7 @@ const Matches = ({ user, setUser }) => {
         {matches?.length > 0 ? (
           matches.map((match) => (
             <div key={`card_user_${user.id}`} className="column">
-              <div className="box">
+              <div className="single">
                 <div className="card">
                   <div className="Images">
                     <img src={match.photos[0].image_url} alt="pic" />
