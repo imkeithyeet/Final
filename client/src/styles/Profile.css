@@ -37,3 +37,13 @@
     background-color: #e0dddd;
 
 }
+.rows{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    display: static;
+    top: 4em;
+    left: 3em;
+    margin:0 100px 0;
+}

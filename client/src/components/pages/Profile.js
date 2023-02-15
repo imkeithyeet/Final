@@ -60,7 +60,7 @@ const Profile = ({user,setUser}) => {
     <p>Featured Profiles of the day, picked just for you!</p>
     </div>
 
-    <div className="row">
+    <div className="rows">
 
     {
         randomUserList.map((user) => {

@@ -55,10 +55,14 @@ Preview of Login and Sign-up Form Page
 Preview of Main logged In with User Page and the user icon changes depending on different users that are signed in and show all of their matches besides themselves. 
 ![landing page!](Images/land%201.png)
 ![landing page!](Images/land%202.png)
+
  Here is a different user being logged in and their respective profile icon
  ![landing page!](Images/Icon.png)
 
-
+## Project Preview(Profile/Picks Page)
+Preview of the profile Picks Page 
+![landing page!](Images/profile%201.png)
+![landing page!](Images/profile%202.png)
 
 
 
