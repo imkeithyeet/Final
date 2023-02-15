@@ -28,7 +28,7 @@ to install all the frontend dependencies and start the application.
 
 
 ## Project Preview(Main Home Landing Page)
-Here is my Preview of Main Home Landing Page 
+Here is the Previews of  the Main Home Landing Page 
 ![landing page!](Images/Screen%20Shot%202023-02-14%20at%208.33.48%20PM.jpg)
 ![landing page!](Images/Screen%20Shot%202023-02-14%20at%208.33.54%20PM.png)
 ![landing page!](Images/Screen%20Shot%202023-02-14%20at%208.33.59%20PM.png)
@@ -37,7 +37,7 @@ Here is my Preview of Main Home Landing Page
 
 
 ## Project Preview(About Page)
-Preview of About Page
+Previews of About Page
 ![landing page!](Images/about%201.png)
 ![landing page!](Images/about%202.png)
 
@@ -47,12 +47,12 @@ Preview of Contact Page
 
 
 ## Project Preview(Login and Sign-up Form Page)
-Preview of Login and Sign-up Form Page
+Previews of Login and Sign-up Form Page
 ![landing page!](Images/login.png)
 ![landing page!](Images/Signup.png)
 
 ## Project Preview(Main Logged in with User Page)
-Preview of Main logged In with User Page and the user icon changes depending on different users that are signed in and show all of their matches besides themselves. 
+Previews of Main logged In with User Page and the user icon changes depending on different users that are signed in and show all of their matches besides themselves. 
 ![landing page!](Images/land%201.png)
 ![landing page!](Images/land%202.png)
 
@@ -60,10 +60,14 @@ Preview of Main logged In with User Page and the user icon changes depending on 
  ![landing page!](Images/Icon.png)
 
 ## Project Preview(Profile/Picks Page)
-Preview of the profile Picks Page 
+Previews of the profile Picks Page 
 ![landing page!](Images/profile%201.png)
 ![landing page!](Images/profile%202.png)
 
 
+## Project Preview(Avatar Preview)
+Previews of the Avatar Icon 
+![landing page!](Images/avatar%201.png)
+![landing page!](Images/avatar%202.png)
 
 
