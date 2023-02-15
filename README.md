@@ -36,5 +36,7 @@ Here is my Preview of Main Home Landing Page
 ![landing page!](Images/Screen%20Shot%202023-02-14%20at%208.34.19%20PM.png)
 
 
-## Deploying
+## Project Preview(About Page)
+
+
 
