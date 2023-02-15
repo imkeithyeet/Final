@@ -31,11 +31,11 @@ const Matches = ({ user, setUser }) => {
   return (
     <div>
       <NavBarLoggedIn user={user} setUser={setUser} />
-      <div className="Matches">Matches</div>
+      <div className="Matches">Matches ✴</div>
       <div className="matches-list">
         {matches?.length > 0 ? (
           matches.map((match) => (
-            <div key={`card_user_${user.id}`} className="column">
+            <div key={`card_user_${match.id}`} className="column">
               <div className="single">
                 <div className="card">
                   <div className="Images">

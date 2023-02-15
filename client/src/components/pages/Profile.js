@@ -54,7 +54,7 @@ const Profile = ({user,setUser}) => {
         <NavBarLoggedIn user={user} setUser={setUser} />
     <section className="center">
     <div className="h4">
-    <h4>Picks ✴</h4>
+    <h4>Picks 👤</h4>
     </div>
     <div className="features">
     <p>Featured Profiles of the day, picked just for you!</p>
