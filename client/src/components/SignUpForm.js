@@ -56,7 +56,7 @@ function SignUpForm  ({  setUser,showLogin, setShowLogin}) {
         <div className="register">
           <h3 className="Auth-form-title">Register Your Profile Today</h3>
           <div className="text-center">
-            Already registered?{" "}
+            Already Registered?{" "}
             <span className="link-primary" onClick={() => setShowLogin(!showLogin)}>
             Sign In
           </span>
