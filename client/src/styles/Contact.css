@@ -23,6 +23,8 @@ input{
     margin:0.9rem 0;
     width:50%;
     border-radius: 4px;
+    position: relative;
+    display: flex;
 }
 button{
     padding:0.2rem;
@@ -67,7 +69,7 @@ button{
     position: relative;
     display: inline-block;
     top: 30px;
-    left: 31em;
+    left: 39em;
     width: 80em;
     overflow-x: hidden;
    
