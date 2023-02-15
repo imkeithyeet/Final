@@ -49,7 +49,7 @@ Preview of Contact Page
 ## Project Preview(Login and Sign-up Form Page)
 Preview of Login and Sign-up Form Page
 ![landing page!](Images/login.png)
-![landing page!](Images/signup.png)
+![landing page!](Images/Signup.png)
 
 
 
