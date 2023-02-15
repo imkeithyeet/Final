@@ -66,7 +66,7 @@ Previews of the profile Picks Page
 
 
 ## Project Preview(Avatar Preview)
-Previews of the Avatar Icon 
+Previews of the Avatar Icon that shows the user's name when you hover over the icon and the logout button within the avatar when you click on it.
 ![landing page!](Images/avatar%201.png)
 ![landing page!](Images/avatar%202.png)
 
