@@ -29,7 +29,7 @@ to install all the frontend dependencies and start the application.
 
 ## Project Preview(Main Home Landing Page)
 Here is my Preview of Main Home Landing Page 
-
+![landing page!](Screen Shot 2023-02-14 at 8.33.48 PM.jpg)
 
 ## Deploying
 
