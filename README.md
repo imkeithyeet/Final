@@ -65,6 +65,14 @@ Previews of the profile Picks Page
 ![landing page!](Images/profile%202.png)
 
 
+
+
+## Project Preview(Matches Preview)
+Preview of the Matches Component that shows their specific matches when you log into their respective user profile
+![landing page!](Images/match%201.png)
+![landing page!](Images/match%202.png)
+
+
 ## Project Preview(Avatar Preview)
 Previews of the Avatar Icon that shows the user's name when you hover over the icon and the logout button within the avatar when you click on it.
 ![landing page!](Images/avatar%201.png)
