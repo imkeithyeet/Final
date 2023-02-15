@@ -6,19 +6,29 @@ The backend code is in the root directory of this project, and the frontend code
 
 Fork and clone this repo, cd into the directory and run:
 
+```console
 bundle install
+```
 to install all the backend dependencies, then run:
 
-### rails db:create db:migrate
-### rails s
+```console
+rails db:create db:migrate
+rails s
+```
+
+
 to setup the database and start the server.
+Next, open another terminal window and run:
+```console
+npm install --prefix client
+npm start --prefix client
+```
 
-## Next, open another terminal window and run:
-
-### npm install --prefix client
-### npm start --prefix client
 to install all the frontend dependencies and start the application.
 
+
+## Project Preview(Main Home Landing Page)
+Here is my Preview of Main Home Landing Page 
 
 
 ## Deploying
