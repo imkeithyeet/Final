@@ -37,6 +37,16 @@ Here is my Preview of Main Home Landing Page
 
 
 ## Project Preview(About Page)
+Preview of About Page
+![landing page!](Images/about%201.png)
+![landing page!](Images/about%202.png)
+
+## Project Preview(Contact Page)
+Preview of Contact Page
+![landing page!](Images/Contact.png)
+
+
+
 
 
 
