@@ -2,10 +2,10 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Gold Premium',
-    headline: 'Unlimited swipes,star likes and super matches',
+    topLine: 'Our Approach',
+    headline: 'Go on your last first date.',
     description:
-      'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+      'Us Dating is built on the belief that anyone looking for love should be able to find it.Our Us Dating Labs researchers, behavioral analysts, and matchmakers study daters and compatibility so we can make Us Dating better for you.',
       img: 'https://images.pexels.com/photos/6585024/pexels-photo-6585024.jpeg?auto=compress&cs=tinysrgb&w=1600',
       alt: 'Date Picture'
 
@@ -17,10 +17,12 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    headline: 'Us Dating is a successful platform for creating happy, passionate, and fulfilling relationships.',
+    topLine: 'What Our User had said about Us Dating',
+    headline: '"Thank you Us Dating, we are getting married next month!"',
     description:
-      'Us Dating is different from other online dating websites and services. By successfully matching couples with mutual backgrounds and interests, ',
+      'Leana D. and Bryan K. ',
   };
+  
   
   export const homeObjThree = {
     lightBg: true,

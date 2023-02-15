@@ -1,5 +1,5 @@
 .navbar {
-    background: #1c2237;
+    background: #3c4463;
     height: 150px;
     display: absolute;
     justify-content: right;
@@ -46,7 +46,7 @@
     justify-content: center;
     list-style: none;
     text-align: center;
-    justify-content: end;
+    justify-content: flex-end;
     right: 20px;
     top: 40px;
     

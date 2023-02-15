@@ -1,14 +1,29 @@
 class User < ApplicationRecord
     has_secure_password
     has_many :photos, dependent: :destroy
-    has_many :liked_matches, class_name: "Match", foreign_key: :user_1
-    has_many :liked_by_matches, class_name: "Match", foreign_key: :user_2
+    has_many :matches
+    has_many :liked_by_matches, class_name: "Match", foreign_key: :liked_user
+    has_many :is_match_matches, -> {where(is_match: true)}, foreign_key: :user_id, class_name: "Match"
+    has_many :is_match_liked_by_matches, -> {where(is_match: true)}, class_name: "Match", foreign_key: :liked_user
+    has_many :is_match_liked_users, through: :is_match_matches, source: :liked_user
+    has_many :is_match_liked_by_users, through: :is_match_liked_by_matches, source: :user
 
     validates_presence_of :first_name, :last_name, :password,length: {in: 4..25}
 
 
     validates :email,presence: true, uniqueness: true, format:{with: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i}
     validates :password, length: {in: 6..25}
+
+
+    def possible_matches
+        User.all - matches - [self]
+    end
+
+    def matched_users
+        is_match_liked_by_users & is_match_liked_users
+    end
+
+
 
 end
 

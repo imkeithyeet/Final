@@ -9,8 +9,8 @@
     cursor: pointer;
     transition: all 0.3s ease-out;
     position: relative;
-    display: inline-block;
-    left: 17.1%;
+    display: sticky;
+    left: 13.1em;
     bottom: 10em;
   }
 
@@ -22,14 +22,46 @@
 
  
   .dating{
-    width: 820px;
-    height: 560px;
+    width: 850px;
+    height: 620px;
     margin-top: 0;
     margin-right: 0;
     margin-left: 90px;
     padding-right: 0;
     border-radius: 15px;
     position: absolute;
-    top: 57em;
+    top: 55em;
+
+  }
+
+  .Top-line {
+    color: #f00946;
+    font-size: 16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    position: relative;
+    display: sticky;
+    top: -33.4em;
+    left: 64em;
+  }
+  .Heading {
+    margin-bottom: 24px;
+    font-size: 33px;
+    font-weight: 701;
+    color: #f7f8fa;
+    position: relative;
+    display: sticky;
+    top: -15em;
+    left: 30em;
+  }
+  .subtitle{
+    position: relative;
+    display: sticky;
+    font: 19px;
+    justify-content: center;
+    top: -24.3em;
+    left: 57em;
+    color: #ffffff;
 
   }

@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
-import { useNavigate } from "react-router-dom"
 import '../styles/LoginForm.css'
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,7 +10,6 @@ export default function LoginForm({ setUser, showLogin, setShowLogin}) {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  let navigate = useNavigate()
  
 
   function handleSubmit(e) {
@@ -78,7 +77,7 @@ export default function LoginForm({ setUser, showLogin, setShowLogin}) {
           </button>
         </div>
         <p className="forgot">
-          Forgot <a className="p" href="#">Password?</a>
+          Forgot <Link to="/" className="p" >Password?</Link>
         </p>
         <div>
         {errors.map((err) => (

@@ -1,6 +1,9 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import  "../../styles/Contact.css";
 import NavBarLoggedIn from '../NavBarLoggedIn';
+import Footer from '../Footer';
+import  "../../styles/DarkMode.css";
+
 
 
 
@@ -9,6 +12,24 @@ const FORM_ENDPOINT = "https://public.herotofu.com/v1/d7d78ef0-9ede-11ed-82c7-3d
 
 const ContactForm = ({user,setUser}) => {
   const [submitted, setSubmitted] = useState(false);
+   const [theme, setTheme] = useState(   
+     localStorage.getItem('theme') || 'light'
+  );
+  const toggleTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
+
+    } else {
+      setTheme('dark');
+      localStorage.setItem('theme', 'dark');
+
+    }
+  };
+   useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   const handleSubmit = () => {
     setTimeout(() => {
       setSubmitted(true);
@@ -18,6 +39,7 @@ const ContactForm = ({user,setUser}) => {
   if (submitted) {
     return (
       <>
+       <NavBarLoggedIn user={user} setUser={setUser} />
        <p1 className="text-center">✅</p1>
         <h2 className="thank">Thank you!</h2>
         <div className="soon">We'll be in touch soon.</div>
@@ -38,16 +60,16 @@ const ContactForm = ({user,setUser}) => {
         <h1 className="H3">Contact Us</h1>
         </div>
         <div>
-        <p1 class="text-left">Send Us a Message Today:</p1>
+        <p className="text-left">Send Us a Message Today:</p>
         </div>
-        <wrapper className="bars">
+        <div className="bars">
       <div>
         <input type="text" placeholder="Your name" name="name" required />
       </div>
       <div>
         <input type="email" placeholder="Email" name="email" required />
       </div>
-      </wrapper>
+      </div>
       <div className="bar">
         <textarea placeholder="Your message" name="message" required />
       </div>
@@ -55,8 +77,11 @@ const ContactForm = ({user,setUser}) => {
         <button type="submit"> Send a message </button>
       </div>
       
-      <p3 className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p3>
+      <p className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p>
     </form>
+          <button className="toggle" onClick={toggleTheme}>{theme === 'dark' ? '𖤓' : '☽'}</button>
+
+    <Footer/>
     </div>
   );
 };

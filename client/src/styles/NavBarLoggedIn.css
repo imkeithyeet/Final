@@ -14,6 +14,14 @@
     justify-content: right;
 
 }
+.links:hover{
+    transform: scale(1.05);
+
+    --_c: var(--c);
+    --_p: 100%;
+    transition: 0.1s, color 0s .1s, background-color 0s .5s;
+    
+}
 
 .icon{
     position: relative;
@@ -22,6 +30,14 @@
     right: 20px;
     transform: scale(1.7);
 }
-.container{
-    /* background-color: aquamarine; */
+.icon .MuiIconButton-root:hover {
+    color: #fff;
+  
+  }
+.logout{
+    position: relative;
+    display: flex;
+    
 }
+
+

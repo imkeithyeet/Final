@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import  "../../styles/Contact.css";
 import Navbar from '../Navbar';
+import Footer from '../Footer';
+
 
 
 
@@ -17,7 +19,7 @@ const Contact = () => {
   if (submitted) {
     return (
       <>
-       <p1 className="text-center">✅</p1>
+       <p className="text-center">✅</p>
         <h2 className="thank">Thank you!</h2>
         <div className="soon">We'll be in touch soon.</div>
       </>
@@ -37,16 +39,16 @@ const Contact = () => {
         <h1 className="H3">Contact Us</h1>
         </div>
         <div>
-        <p1 class="text-left">Send Us a Message Today:</p1>
+        <p class="text-left">Send Us a Message Today:</p>
         </div>
-        <wrapper className="bars">
+        <div className="bars">
       <div>
         <input type="text" placeholder="Your name" name="name" required />
       </div>
       <div>
         <input type="email" placeholder="Email" name="email" required />
       </div>
-      </wrapper>
+      </div>
       <div className="bar">
         <textarea placeholder="Your message" name="message" required />
       </div>
@@ -54,8 +56,9 @@ const Contact = () => {
         <button type="submit"> Send a message </button>
       </div>
       
-      <p3 className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p3>
+      <p className= "P3"> By submitting your message and personal details you are permitting us to contact you by these means in response to your inquiry. </p>
     </form>
+    <Footer/>
     </div>
   );
 };

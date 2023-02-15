@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
+
 
 
 function SignUpForm  ({  setUser,showLogin, setShowLogin}) {
@@ -111,7 +113,7 @@ function SignUpForm  ({  setUser,showLogin, setShowLogin}) {
             </button>
           </div>
           <p className="forgot">
-            Forgot <a className="p" href="#">Password?</a>
+          Forgot <Link to="/" className="p" >Password?</Link>
           </p>
         </div>
         <div>

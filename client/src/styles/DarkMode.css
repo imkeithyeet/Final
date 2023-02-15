@@ -1,0 +1,24 @@
+.dark {
+    background-color: rgb(186, 184, 184);
+    color: #fff;
+    }
+    .light {
+background-color: #fff;
+color: #333;
+    }
+.toggle{
+    position: absolute;
+    display: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    left: 106em;
+    top: 18em;
+    width: 2.4em;
+    height: 2.4em;
+
+}
+.toggle:hover{
+    color: #1976d2;
+    background-color: rgb(182, 182, 182);
+
+}
