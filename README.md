@@ -30,6 +30,12 @@ to install all the frontend dependencies and start the application.
 - Ruby Rails
 - Postgresql
 
+## Frontend Technologies
+- React.Js
+- Postgresql
+- Material UI
+
+
 
 ## Project Preview(Main Home Landing Page)
 Here is the Previews of  the Main Home Landing Page 
