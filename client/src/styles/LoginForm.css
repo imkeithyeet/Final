@@ -77,7 +77,7 @@
     position: relative;
     display: flex;
    left: 6.5em;
-   top: 1em;
+   top: 2em;
   }
   .submit{
     position: relative;
@@ -109,5 +109,5 @@
   .text-center{
     position: relative;
     display: flex;
-    top:7em;
+    top:-0.2em;
   }

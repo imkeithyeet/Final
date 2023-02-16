@@ -48,6 +48,13 @@ button{
     top:10em;
 
 }
+.check{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:7em;
+ 
+}
 .thank {
     color: rgb(0, 0, 0);
     font-size: 50px;

@@ -20,7 +20,7 @@ const Contact = () => {
     return (
       <>
       <Navbar />
-       <p className="text-center">✅</p>
+       <p className="check">✅</p>
         <h2 className="thank">Thank you!</h2>
         <div className="soon">We'll be in touch soon.</div>
         <Footer />
