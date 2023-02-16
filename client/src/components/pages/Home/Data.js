@@ -8,10 +8,8 @@ export const homeObjOne = {
       'Us Dating is built on the belief that anyone looking for love should be able to find it. Our Us Dating Labs researchers, behavioral analysts, and matchmakers study daters and compatibility so we can make Us Dating better for you.',
       img: 'https://images.pexels.com/photos/6585024/pexels-photo-6585024.jpeg?auto=compress&cs=tinysrgb&w=1600',
       alt: 'Date Picture'
-
-
-
   };
+  
   
   export const homeObjTwo = {
     lightBg: false,

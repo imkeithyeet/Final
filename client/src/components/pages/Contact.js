@@ -19,9 +19,11 @@ const Contact = () => {
   if (submitted) {
     return (
       <>
+      <Navbar />
        <p className="text-center">✅</p>
         <h2 className="thank">Thank you!</h2>
         <div className="soon">We'll be in touch soon.</div>
+        <Footer />
       </>
     );
   }
