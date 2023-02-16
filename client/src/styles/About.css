@@ -34,25 +34,30 @@
     font-family: "Times New Roman", Times, serif;
 }
 .p1{
-    overflow-x:auto;
-    position: relative;
-    display: sticky;
-    font-size:37px;
+    overflow-x: auto;
+    display: flex;
+    font-size:1.5vw; /* use responsive font-size */
     color: rgb(0, 0, 0);
     font-weight: regular;
     font-family: "Times New Roman", Times, serif;
-    left: 28em;
-    bottom: 14em;
+    position: relative; /* use relative positioning */
+    left: 34em;
+    bottom: 18em;
 
 }
-.H5{
-    overflow:auto;
+.H5 {
+    overflow: auto;
     position: relative;
     display: sticky;
-    position: relative;
-    font-size:65px;
-    top: 6em;
-    right: -16.5em;
+    font-size:4vw; /* use responsive font-size */
+    top: 4.5em; /* use percentage value for positioning */
+    right: -50.5%; /* use percentage value for positioning */
     font-family: "Times New Roman", Times, serif;
+}
 
+@media (max-width: 768px) { /* adjust positioning for smaller screens */
+  .H5 {
+    top: 12%;
+    right: -8%;
+  }
 }

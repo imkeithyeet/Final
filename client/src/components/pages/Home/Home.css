@@ -1,18 +1,17 @@
 
-    .button {
-    padding: 12px 64px;
-    border-radius: 8px;
-    border: 1px solid var(--primary);
-    color: rgb(0, 0, 0);
-    background-color: rgb(134, 211, 239);
-    font-size: 22px;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    position: relative;
-    display: fixed;
-    left: 16em;
-    bottom: 10em;
-  }
+.button {
+  padding: 12px 64px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  color: rgb(0, 0, 0);
+  background-color: rgb(134, 211, 239);
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: absolute; /* use fixed positioning */
+  bottom: 14em; /* use percentage-based margin */
+  right: 61em; /* use percentage-based margin */
+}
 
 .button:hover {
     color: #fff;
