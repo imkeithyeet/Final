@@ -1,5 +1,5 @@
 .navbar {
-    background: #3c4463;
+    background: #243247;
     height: 150px;
     display: absolute;
     justify-content: right;
@@ -8,6 +8,8 @@
     position: sticky;
     top: 0;
     right:200px;
+    border: solid 0.2em;
+    border-bottom-color: rgb(187, 187, 187);
 
   }
   

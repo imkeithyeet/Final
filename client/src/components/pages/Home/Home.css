@@ -9,8 +9,8 @@
     cursor: pointer;
     transition: all 0.3s ease-out;
     position: relative;
-    display: sticky;
-    left: 13.1em;
+    display: fixed;
+    left: 16em;
     bottom: 10em;
   }
 

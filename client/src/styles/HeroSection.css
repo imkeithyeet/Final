@@ -13,9 +13,10 @@
     position: relative;
     left: 179px;
     display: sticky;
-    top: -6.7em;
+    top: -6em;
     color:black;
     background-color: #fff;
+    font-size: 25px;
 
   }
   .heading.dark{
@@ -93,12 +94,12 @@
   .home__hero-subtitle {
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 29px;
     position: relative;
     display: sticky;
-    top: -5em;
-    left: -4em;
+    top: -4em;
+    left:-2.6em;
     color: white;
   }
   
@@ -107,7 +108,7 @@
   }
   
   .home__hero-img {
-    max-width: 70%;
+    max-width: 75%;
     margin-left:-13px;
     padding-right: 0;
     border-radius: 15px;
