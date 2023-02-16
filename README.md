@@ -27,7 +27,8 @@ npm start --prefix client
 to install all the frontend dependencies and start the application.
 
 ## Backend Technologies
-
+- Ruby Rails
+- Postgresql
 
 
 ## Project Preview(Main Home Landing Page)
