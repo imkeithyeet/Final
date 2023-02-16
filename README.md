@@ -26,6 +26,10 @@ npm start --prefix client
 
 to install all the frontend dependencies and start the application.
 
+```console
+Backend Technologies
+```
+
 
 ## Project Preview(Main Home Landing Page)
 Here is the Previews of  the Main Home Landing Page 
