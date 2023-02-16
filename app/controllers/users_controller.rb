@@ -15,11 +15,11 @@ class UsersController < ApplicationController
     end
     private 
     def user_params
-        params.permit( :email,:password, :password_confirmation, :first_name, :last_name)
+        params.permit(:email,:password, :password_confirmation, :first_name, :last_name)
     end
     private
     def find_user
-        User.find_by(id: params[:id] )
+        User.find_by(id: params[:id])
     end
 end
 

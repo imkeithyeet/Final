@@ -44,7 +44,6 @@
     border-radius: 1rem;
     margin-bottom: 30px;
     margin-top: 4px;
-
     overflow: hidden;
     box-shadow: 2px 1px 3px 3px rgb(173, 171, 171);
     transition: background-color 1s ease-out 0.1ms;
@@ -76,6 +75,7 @@ p{
 }
 h1{
     color: #001d38;
+    font-size: 29px;
 }
 .column{
     padding-left: 1rem;
@@ -122,10 +122,11 @@ h1{
 }
 .property-content h3{
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 18px;
     color: #001d38;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: 'times new roman';
+
 }
 .mark span{
     font-size: 13px;
