@@ -39,7 +39,7 @@ m7 = Match.create(user_id: u8.id, liked_user_id: u9.id, is_match: true)
 
 puts "Seeding photos..."
 p1 = Photo.create(image_url: 'https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/2022/02/11/ade01cd6-4d97-4f76-a9cb-22020e2d1c76_a21ac38f.jpg?itok=Fb3hVG0n', image_url2:"https://nypost.com/wp-content/uploads/sites/2/2022/02/beverly-zhu-04.jpg?quality=90&strip=all", image_url3:"https://img.olympicchannel.com/images/image/private/t_social_share_thumb/f_auto/primary/py2f6pygorbvbg6tmq9x", user:u1 )
-p2 = Photo.create(image_url: 'https://media.licdn.com/dms/image/C5603AQFYyYE9aptBIQ/profile-displayphoto-shrink_800_800/0/1588727965286?e=1680739200&v=beta&t=gVp3WplPvscIedt1AobWydmYGwfzRLySOOI8vyVCblg',
+p2 = Photo.create(image_url: 'https://media.licdn.com/dms/image/D5603AQGEplO-6z4mHQ/profile-displayphoto-shrink_800_800/0/1676682128500?e=2147483647&v=beta&t=XBQb32NZoSFn89A4jsUXyuSH21w1VNHp1zcuSs_nfCk',
 image_url2:"https://p16.tiktokcdn-us.com/tos-useast5-avt-0068-tx/cd2347d527f370ed1f8b973446670ce8~c5_720x720.jpeg", user:u2 )
 p3 = Photo.create(image_url: 'https://img.jakpost.net/c/2020/04/11/2020_04_11_92465_1586599791._large.jpg', image_url2:"https://static.hiphopdx.com/2021/09/Rich-Brian-10M-Spotify_1280x720_09062021-1200x675.jpg", user:u3 )
 p4 = Photo.create(image_url: 'https://i.kym-cdn.com/entries/icons/original/000/031/397/dlephinearresttted.jpg', image_url2:"https://preview.redd.it/b8uc64b8ee791.jpg?width=640&crop=smart&auto=webp&s=c0c211b72739032eb31adfe7cf5dd16392aa5349", user:u4 )

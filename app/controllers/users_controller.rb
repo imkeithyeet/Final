@@ -4,6 +4,7 @@ class UsersController < ApplicationController
         users = @current_user.possible_matches
         render json: users, status: :ok
     end
+  
     def show
         user = find_user
         render json: user
